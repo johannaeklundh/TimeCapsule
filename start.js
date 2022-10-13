@@ -1,7 +1,5 @@
-import
+import { render, screen } from "@testing-library/react";
 
-function start(){
-
-}
+function start() {}
 
 export default start;
