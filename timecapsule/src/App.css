@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+h1 {
+  margin-left: 40%;
+}
+
+body {
+  background-color: pink;
+}
