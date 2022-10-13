@@ -37,9 +37,24 @@
   }
 }
 h1 {
-  margin-left: 40%;
+  margin-left: 25vw;
 }
 
 body {
   background-color: pink;
+  margin: 5vw;
+}
+
+.capsule {
+  display: flex;
+  justify-content: center;
+  background-color: brown;
+  width: 30vw;
+  border: 1px solid black;
+  margin: 5vw;
+}
+
+.capsuleContainer {
+  display: flex;
+  justify-content: center;
 }
