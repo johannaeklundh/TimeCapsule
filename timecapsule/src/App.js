@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import { useState } from "react";
 import Popup from "react-animated-popup";
+import Capsule from "./components/Capsule";
 
 function App() {
   const [capsules, setCapsules] = useState([]);
@@ -10,7 +11,11 @@ function App() {
 
   const createCapsule = () => {
     if (tempCap === "") return;
-    const newCapsule = tempCap; //skapar ny kapsel med namnet test
+    const newCapsule = {
+      name: tempCap,
+      openDate: new Date(),
+      closeDate: new Date(),
+    }; //skapar ny kapsel med namnet test
     setCapsules([...capsules, newCapsule]); // lägger till den nya kaspeln i en array med alla andra
     setVisible(false);
   };
@@ -50,8 +55,8 @@ function App() {
         </button>
       </div>
       <div className="middle">
-        {capsules.map((capsule, index) => {
-          return <p className="capsule"> {capsule} </p>;
+        {capsules.map((capsuledata, index) => {
+          return <Capsule data={capsuledata}></Capsule>;
         })}
       </div>
       <div className="bottom"></div>
