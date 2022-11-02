@@ -41,7 +41,6 @@ h1 {
 }
 
 body {
-  background-color: pink;
   margin: 5vw;
 }
 
@@ -57,4 +56,14 @@ body {
 .capsuleContainer {
   display: flex;
   justify-content: center;
+  background-color: black;
+}
+.top {
+  background-color: skyblue;
+}
+.midlde {
+  background-color: rgb(215, 129, 82);
+}
+.bottom {
+  background-color: brown;
 }
