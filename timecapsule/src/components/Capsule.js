@@ -1,10 +1,5 @@
 const Capsule = ({ data }) => {
-  return (
-    <p>
-      {" "}
-      {data.name} {data.openDate.getMonth()}
-    </p>
-  );
+  return <p> {data.name}</p>;
 };
 
 export default Capsule;
