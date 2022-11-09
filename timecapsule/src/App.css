@@ -80,10 +80,10 @@ body {
 
 #plus img {
   width: 500px;
-
-
 }
-
+#opened img {
+  width: 400px;
+}
 #plus {
   background-color: transparent;
   border: none;

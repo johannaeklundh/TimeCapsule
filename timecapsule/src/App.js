@@ -6,6 +6,7 @@ import Capsule from "./components/Capsule";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import CapsulePlus from './CapsulePlusRemovebg.png'; // bild på kapsel till knapp
+import OpenedCapsule from './openedCapsule.png';
 
 function App() {
   const [capsules, setCapsules] = useState([]);
@@ -67,7 +68,6 @@ function App() {
 
       <div className="top">
         <button id="plus" type="button" onClick={() => setVisible(true)}>
-           
           <img src={CapsulePlus} />
         </button>
       </div>
@@ -76,7 +76,11 @@ function App() {
           return <Capsule data={capsuledata}></Capsule>;
         })}
       </div>
-      <div className="bottom"></div>
+      <div className="bottom">
+        <button id="opened" type="button" onClick={() => setVisible(true)}>
+        <img src={OpenedCapsule} />
+        </button>
+      </div>
     </div>
   );
 }
