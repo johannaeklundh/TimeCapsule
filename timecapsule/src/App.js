@@ -5,6 +5,7 @@ import Popup from "react-animated-popup";
 import Capsule from "./components/Capsule";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import CapsulePlus from './CapsulePlusRemovebg.png'; // with import
 
 function App() {
   const [capsules, setCapsules] = useState([]);
@@ -67,7 +68,8 @@ function App() {
       <div className="top">
         <h1> TIME CAPSULE </h1>
         <button id="plus" type="button" onClick={() => setVisible(true)}>
-          Create new capsule
+          Create new capsule 
+          <img src={CapsulePlus} />
         </button>
       </div>
       <div className="middle">

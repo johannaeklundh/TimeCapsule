@@ -78,6 +78,13 @@ body {
   background-color: brown;
 }
 
+#plus img {
+  width: 500px;
+
+  /*height: 40px;*/
+}
+
 #plus {
-  background-color: yellow;
+  background-color: transparent;
+  border: none;
 }
