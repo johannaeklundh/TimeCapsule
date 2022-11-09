@@ -17,8 +17,7 @@ function App() {
     if (tempCap === "") return;
     const newCapsule = {
       name: tempCap,
-      openDate: new Date(),
-      closeDate: new Date(),
+      day: (endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24),
     }; //skapar ny kapsel med namnet test
     setCapsules([...capsules, newCapsule]); // lägger till den nya kaspeln i en array med alla andra
     setVisible(false);
@@ -47,9 +46,10 @@ function App() {
               onChange={(date) => setStartDate(date)}
             />
             <p>Select enddate:</p>
-
-            <DatePicker selected={endDate} onChange={(date) => setEndDate(date)} />
-
+            <DatePicker
+              selected={endDate}
+              onChange={(date) => setEndDate(date)}
+            />
             <br></br>
           </form>
           <button type="button" onClick={() => setVisible(false)}>
