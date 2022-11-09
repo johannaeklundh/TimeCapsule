@@ -63,7 +63,7 @@ function App() {
 
       <div className="top">
         <h1> TIME CAPSULE </h1>
-        <button type="button" onClick={() => setVisible(true)}>
+        <button id="plus" type="button" onClick={() => setVisible(true)}>
           Create new capsule
         </button>
       </div>
