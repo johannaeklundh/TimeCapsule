@@ -3,6 +3,7 @@ import "./App.css";
 import { useState } from "react";
 import Popup from "react-animated-popup";
 import Capsule from "./components/Capsule";
+import DatePicker from "react-datepicker";
 
 function App() {
   const [capsules, setCapsules] = useState([]);
