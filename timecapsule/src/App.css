@@ -41,7 +41,10 @@ h1 {
 }
 
 body {
-  margin: 5vw;
+  
+  height: 3000pt;
+  width: 900pt;
+  
 }
 
 .capsule {
@@ -59,10 +62,17 @@ body {
   background-color: black;
 }
 .top {
-  background-color: skyblue;
+  background-image: url("Startsida.png");
+  height: 1500pt;
+  width: 900pt;
+  background-size: cover; 
+  
 }
-.midlde {
-  background-color: rgb(215, 129, 82);
+.middle {
+  background-image: url("testjord2.png");
+  background-size: cover; 
+  height: 400pt;
+  width: 900pt;
 }
 .bottom {
   background-color: brown;
