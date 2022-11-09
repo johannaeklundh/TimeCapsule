@@ -3,11 +3,15 @@ import "./App.css";
 import { useState } from "react";
 import Popup from "react-animated-popup";
 import Capsule from "./components/Capsule";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 function App() {
   const [capsules, setCapsules] = useState([]);
   const [visible, setVisible] = useState(false);
   const [tempCap, setTempCap] = useState("");
+  const [startDate, setStartDate] = useState(new Date());
+  const [endDate, setEndDate] = useState(new Date());
 
   const createCapsule = () => {
     if (tempCap === "") return;
@@ -37,6 +41,15 @@ function App() {
               name="Memoryname"
               onChange={capsuleNameHandler}
             ></input>
+            <p>Select startdate:</p>
+            <DatePicker
+              selected={startDate}
+              onChange={(date) => setStartDate(date)}
+            />
+            <p>Select enddate:</p>
+
+            <DatePicker selected={endDate} onChange={(date) => setEndDate(date)} />
+
             <br></br>
           </form>
           <button type="button" onClick={() => setVisible(false)}>
