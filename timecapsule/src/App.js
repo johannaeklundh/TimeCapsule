@@ -15,9 +15,12 @@ function App() {
 
   const createCapsule = () => {
     if (tempCap === "") return;
+    const days =
+      (endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24);
+    if (days <= 0) return;
     const newCapsule = {
       name: tempCap,
-      day: (endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24),
+      day: days,
     }; //skapar ny kapsel med namnet test
     setCapsules([...capsules, newCapsule]); // lägger till den nya kaspeln i en array med alla andra
     setVisible(false);
