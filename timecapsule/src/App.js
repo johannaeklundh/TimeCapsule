@@ -6,7 +6,6 @@ import Capsule from "./components/Capsule";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-
 function App() {
   const [capsules, setCapsules] = useState([]);
   const [visible, setVisible] = useState(false);
@@ -23,8 +22,6 @@ function App() {
     setCapsules([...capsules, newCapsule]); // lägger till den nya kaspeln i en array med alla andra
     setVisible(false);
   };
-
-
 
   const capsuleNameHandler = (event) => {
     console.log(event.target.value);
@@ -43,8 +40,12 @@ function App() {
               name="Memoryname"
               onChange={capsuleNameHandler}
             ></input>
-          
-            <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+            <p>Select startdate:</p>
+            <DatePicker
+              selected={startDate}
+              onChange={(date) => setStartDate(date)}
+            />
+            <p>Select enddate:</p>
 
             <br></br>
           </form>
