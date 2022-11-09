@@ -12,6 +12,7 @@ function App() {
   const [visible, setVisible] = useState(false);
   const [tempCap, setTempCap] = useState("");
   const [startDate, setStartDate] = useState(new Date());
+  const [endDate, setEndDate] = useState(new Date());
 
   const createCapsule = () => {
     if (tempCap === "") return;
@@ -45,6 +46,8 @@ function App() {
             ></input>
           
             <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+
+            <DatePicker selected={endDate} onChange={(date) => setEndDate(date)} />
 
             <br></br>
           </form>
