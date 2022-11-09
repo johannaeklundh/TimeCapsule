@@ -4,11 +4,14 @@ import { useState } from "react";
 import Popup from "react-animated-popup";
 import Capsule from "./components/Capsule";
 import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+
 
 function App() {
   const [capsules, setCapsules] = useState([]);
   const [visible, setVisible] = useState(false);
   const [tempCap, setTempCap] = useState("");
+  const [startDate, setStartDate] = useState(new Date());
 
   const createCapsule = () => {
     if (tempCap === "") return;
@@ -20,6 +23,8 @@ function App() {
     setCapsules([...capsules, newCapsule]); // lägger till den nya kaspeln i en array med alla andra
     setVisible(false);
   };
+
+
 
   const capsuleNameHandler = (event) => {
     console.log(event.target.value);
@@ -38,6 +43,9 @@ function App() {
               name="Memoryname"
               onChange={capsuleNameHandler}
             ></input>
+          
+            <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+
             <br></br>
           </form>
           <button type="button" onClick={() => setVisible(false)}>
