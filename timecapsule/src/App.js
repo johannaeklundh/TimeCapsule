@@ -5,7 +5,7 @@ import Popup from "react-animated-popup";
 import Capsule from "./components/Capsule";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import CapsulePlus from './CapsulePlus.png'; // with import
+import CapsulePlus from './CapsulePlusRemovebg.png'; // with import
 
 function App() {
   const [capsules, setCapsules] = useState([]);
