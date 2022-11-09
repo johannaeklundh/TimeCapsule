@@ -6,7 +6,6 @@ import Capsule from "./components/Capsule";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-
 function App() {
   const [capsules, setCapsules] = useState([]);
   const [visible, setVisible] = useState(false);
@@ -25,8 +24,6 @@ function App() {
     setVisible(false);
   };
 
-
-
   const capsuleNameHandler = (event) => {
     console.log(event.target.value);
     setTempCap(event.target.value);
@@ -44,8 +41,12 @@ function App() {
               name="Memoryname"
               onChange={capsuleNameHandler}
             ></input>
-          
-            <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+            <p>Select startdate:</p>
+            <DatePicker
+              selected={startDate}
+              onChange={(date) => setStartDate(date)}
+            />
+            <p>Select enddate:</p>
 
             <DatePicker selected={endDate} onChange={(date) => setEndDate(date)} />
 
