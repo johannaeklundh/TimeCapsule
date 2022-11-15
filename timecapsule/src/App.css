@@ -80,11 +80,12 @@ body {
 
 #plus img {
   width: 500px;
-
-  /*height: 40px;*/
 }
-
+#opened img {
+  width: 400px;
+}
 #plus {
   background-color: transparent;
   border: none;
+
 }
