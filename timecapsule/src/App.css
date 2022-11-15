@@ -36,14 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
 h1 {
   margin-left: 25vw;
 }
 
 body {
-  
   height: 3000pt;
-  
 }
 
 .capsule {
@@ -78,15 +77,15 @@ body {
   height: 400pt;
 }
 .bottom {
-  background-color: brown;
+  background-color: transparent;
 }
 
 #plus img {
-  width: 500px;
+  width: 375px;
 }
 
-#opened img {
-  width: 400px;
+#open img {
+  width: 375px;
 }
 
 #plus {
