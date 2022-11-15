@@ -77,7 +77,7 @@ function App() {
         })}
       </div>
       <div className="bottom">
-      <button id="plus" type="button" onClick={() => setVisible(true)}>
+      <button id="open" type="button" onClick={() => setVisible(true)}>
           <img src={OpenedCapsule} />
         </button>
       </div>

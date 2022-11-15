@@ -68,7 +68,7 @@ body {
 }
 .top {
   background-image: url("Startsida.png");
-  height: 1500pt;
+  height: 1100px;
   background-size: cover; 
  
 }
@@ -90,6 +90,14 @@ body {
 }
 
 #plus {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  box-sizing: content-box;
+  margin-top: 350px;
+}
+
+#open{
   background-color: transparent;
   border: none;
   padding: 0;
