@@ -43,7 +43,6 @@ h1 {
 body {
   
   height: 3000pt;
-  width: 900pt;
   
 }
 
@@ -55,7 +54,13 @@ body {
   border: 1px solid black;
   margin: 5vw;
 }
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
 
+}
 .capsuleContainer {
   display: flex;
   justify-content: center;
@@ -63,8 +68,7 @@ body {
 }
 .top {
   background-image: url("Startsida.png");
-  height: 1500pt;
-  width: 900pt;
+  height: 1100px;
   background-size: cover; 
  
 }
@@ -72,7 +76,6 @@ body {
   background-image: url("testjord2.png");
   background-size: cover; 
   height: 400pt;
-  width: 900pt;
 }
 .bottom {
   background-color: brown;
@@ -89,4 +92,14 @@ body {
 #plus {
   background-color: transparent;
   border: none;
+  padding: 0;
+  box-sizing: content-box;
+  margin-top: 350px;
+}
+
+#open{
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  box-sizing: content-box;
 }
