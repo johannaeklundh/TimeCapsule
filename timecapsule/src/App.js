@@ -1,11 +1,10 @@
 import React from "react";
 import "./App.css";
 import { useState } from "react";
-
 import Capsule from "./components/Capsule";
 import "react-datepicker/dist/react-datepicker.css";
 import CapsulePlus from "./CapsulePlusRemovebg.png"; // with import
-import OpenedCapsule from "./OpenedCapsule.png";
+import OpenedCapsule from "./openedCapsule.png";
 import CreateNewCapsule from "./components/CreateNewCapsule";
 import Popup from "react-animated-popup";
 
