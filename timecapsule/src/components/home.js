@@ -1,4 +1,4 @@
-const Capsule = ({ data }) => {
+const home = () => {
   return (
     <p>
       <div className="top">
@@ -23,4 +23,4 @@ const Capsule = ({ data }) => {
   );
 };
 
-export default Capsule;
+export default home;
