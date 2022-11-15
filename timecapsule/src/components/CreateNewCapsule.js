@@ -1,6 +1,5 @@
 import App from "../App";
 import { useState } from "react";
-
 import DatePicker from "react-datepicker";
 
 const CreateNewCapsule = ({ onCapsule, onCanceled }) => {
@@ -16,7 +15,7 @@ const CreateNewCapsule = ({ onCapsule, onCanceled }) => {
     const newCapsule = {
       name: textInput,
       day: days,
-    }; //skapar ny kapsel med namnet test
+    }; //skapar ny kapsel med namnet testInput
     onCapsule(newCapsule);
   };
 
