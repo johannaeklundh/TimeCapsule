@@ -5,7 +5,7 @@ import { useState } from "react";
 import Capsule from "../components/Capsule";
 import "react-datepicker/dist/react-datepicker.css";
 import CapsulePlus from "../CapsulePlus.png"; // with import
-import OpenedCapsule from "../openedCapsule.png";
+import OpenedCapsule from "../OpenedCapsule.png";
 import CreateNewCapsule from "../components//CreateNewCapsule";
 import Popup from "react-animated-popup";
 import { closedCapsule } from './ClosedCapsule'; 
