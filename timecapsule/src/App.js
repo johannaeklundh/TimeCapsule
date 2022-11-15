@@ -5,7 +5,7 @@ import { useState } from "react";
 import Capsule from "./components/Capsule";
 import "react-datepicker/dist/react-datepicker.css";
 import CapsulePlus from "./CapsulePlusRemovebg.png"; // with import
-import OpenedCapsule from "./openedCapsule.png";
+import OpenedCapsule from "./OpenedCapsule.png";
 import CreateNewCapsule from "./components/CreateNewCapsule";
 import Popup from "react-animated-popup";
 
@@ -19,7 +19,7 @@ function App() {
     setVisible(false);
   };
   return (
-    <div>
+    <div className="container">
       <Popup visible={visible} onClose={() => setVisible(false)}>
         <CreateNewCapsule
           onCapsule={addCapsule}
@@ -28,7 +28,6 @@ function App() {
       </Popup>
       <div className="top">
         <button id="plus" type="button" onClick={() => setVisible(true)}>
-          Create new capsule
           <img src={CapsulePlus} />
         </button>
       </div>
@@ -37,7 +36,11 @@ function App() {
           return <Capsule data={capsuledata}></Capsule>;
         })}
       </div>
-      <div className="bottom"></div>
+      <div className="bottom">
+        <button id="open" type="button" onClick={() => setVisible(true)}>
+          <img src={OpenedCapsule} />
+        </button>
+      </div>
     </div>
   );
 }
