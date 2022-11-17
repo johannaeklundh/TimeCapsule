@@ -8,7 +8,7 @@ import CapsulePlus from "../CapsulePlus.png"; // with import
 import OpenedCapsule from "../openedCapsule.png";
 import CreateNewCapsule from "../components//CreateNewCapsule";
 import Popup from "react-animated-popup";
-import { closedCapsule } from './ClosedCapsule'; 
+import { closedCapsule } from "./AvailableCapsule";
 
 function Home() {
   const [capsules, setCapsules] = useState([]);
@@ -19,7 +19,6 @@ function Home() {
     setCapsules([...capsules, newCapsule]); // lägger till den nya kaspeln i en array med alla andra
     setVisible(false);
   };
-
 
   return (
     <div className="container">
@@ -44,14 +43,8 @@ function Home() {
           <img src={OpenedCapsule} />
         </button>
       </div>
-
-
-
     </div>
-
-
   );
 }
-
 
 export default Home;
