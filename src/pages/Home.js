@@ -9,10 +9,13 @@ import OpenedCapsule from "../openedCapsule.png"; // tillgång att se bilderna
 import CreateNewCapsule from "../components//CreateNewCapsule";
 import Popup from "react-animated-popup";
 import ClosedCapsule from "./AvailableCapsule";
+import { useNavigate } from "react-router-dom";
+import Logo from "../Logo.png";
 
 function Home() {
   const [capsules, setCapsules] = useState([]);
   const [visible, setVisible] = useState(false);
+  const navigate = useNavigate();
 
   const addCapsule = (newCapsule) => {
     console.log(newCapsule);
@@ -32,6 +35,7 @@ function Home() {
       </Popup>
 
       <div className="top">
+        <img src={Logo} />
         <button id="plus" type="button" onClick={() => setVisible(true)}>
           <img src={CapsulePlus} />
         </button>
@@ -44,7 +48,12 @@ function Home() {
       </div>
 
       <div className="bottom">
-        <button id="open" type="button" onClick={() => setVisible(true)}>
+        <button
+          id="open"
+          type="button"
+          onClick={() => navigate("/capsule")}
+          style={{ cursor: "pointer" }}
+        >
           <img src={OpenedCapsule} />
         </button>
       </div>
