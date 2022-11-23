@@ -81,6 +81,7 @@ body {
 .bottom {
   background-color: brown;
   width: inherit;
+  background-image: url("./morkjord2.png"); ;
 }
 
 #logo img{
