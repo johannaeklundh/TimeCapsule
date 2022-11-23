@@ -17,6 +17,7 @@ import jord from "../testjord2.png";
 import morkJord from "../morkjord2.png";
 import AspectImage from "../components/AspectImage";
 
+
 function Home() {
   const [capsules, setCapsules] = useState([]);
   const [visible, setVisible] = useState(false);
@@ -54,9 +55,11 @@ function Home() {
           onClick={() => navigate("/capsule")}
           style={{ cursor: "pointer" }}
         >
-          <img src={OpenedCapsule} />
+          <img src={OpenedCapsule}/>
         </button>
       </AspectImage>
+
+
     </div>
   );
 }
