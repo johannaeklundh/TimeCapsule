@@ -9,6 +9,7 @@ import OpenedCapsule from "../openedCapsule.png";
 import CreateNewCapsule from "../components//CreateNewCapsule";
 import Popup from "react-animated-popup";
 import ClosedCapsule from "./AvailableCapsule";
+import Logo from "../Logo.png";
 
 function Home() {
   const [capsules, setCapsules] = useState([]);
@@ -29,6 +30,7 @@ function Home() {
         />
       </Popup>
       <div className="top">
+      <img src={Logo} /> 
         <button id="plus" type="button" onClick={() => setVisible(true)}>
           <img src={CapsulePlus} />
         </button>

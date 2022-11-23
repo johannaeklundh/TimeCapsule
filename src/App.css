@@ -66,10 +66,12 @@ body {
   background-color: black;
 }
 .top {
-  background-image: url("Startsida2.png");
+  background-image: url("Startsida3.png");
   background-size: cover; 
   padding: 4em;
   min-height: 800px;
+  display: flex;
+  flex-direction: column;
  
 }
 .middle {
