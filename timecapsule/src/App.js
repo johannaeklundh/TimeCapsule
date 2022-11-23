@@ -1,11 +1,6 @@
 import Home from "./pages/Home";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
-import { ClosedCapsule } from "./pages/ClosedCapsule";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { ClosedCapsule } from "./pages/AvailableCapsule";
 
 function App() {
   return (
@@ -32,6 +27,5 @@ function App() {
     </Router>
   );
 }
-
 
 export default App;
