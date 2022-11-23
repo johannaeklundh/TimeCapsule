@@ -57,7 +57,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  text-align:center;
 
 }
 .capsuleContainer {
@@ -66,17 +66,33 @@ body {
   background-color: black;
 }
 .top {
-  background-image: url("Startsida.png");
-  height: 1100px;
+  background-image: url("Startsida2.png");
   background-size: cover; 
+  padding: 4em;
+  min-height: 800px;
  
 }
 .middle {
-  background-image: url("testjord2.png");
+  background-image: url("./testjord2.png");
   background-size: cover; 
   height: 400pt;
+  width: 100%;
 }
 .bottom {
+  background-color: brown;
+  width: inherit;
+}
+
+#logo img{
+  
+}
+
+#plus img {
+  width: 100%;
+}
+
+#open img {
+  width: 100%;
   background-color: transparent;
 }
 
