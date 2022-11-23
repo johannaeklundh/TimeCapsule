@@ -10,13 +10,15 @@ import CreateNewCapsule from "../components//CreateNewCapsule";
 import Popup from "react-animated-popup";
 import ClosedCapsule from "./AvailableCapsule";
 import { useNavigate } from "react-router-dom";
-import Logo from "../Logo.png";
+
 
 import Startsida2 from '../Startsida2.png';
 import jord from '../testjord2.png';
 import morkJord from '../morkjord2.png';
 import AspectImage from "../components/AspectImage"
-
+import Logo from "../Logo.png";
+import MemoryLane from "../memorylane.png";
+import Arrow from "../arrow.png";
 
 
 function Home() {
@@ -41,9 +43,12 @@ function Home() {
         />
       </Popup>
       <AspectImage className="top" src={Startsida2}>
+        <img id="logo" src={Logo} />
         <button id="plus" type="button" onClick={() => setVisible(true)}>
           <img src={CapsulePlus} />
         </button>
+        <img id="memorylane" src={MemoryLane} />
+        <img id="arrow" src={Arrow} />
       </AspectImage>
       <AspectImage className="middle" src={jord}>
         {capsules.map((capsuledata, index) => {
