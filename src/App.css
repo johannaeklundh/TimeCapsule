@@ -66,16 +66,12 @@ body {
   background-color: black;
 }
 .top {
-
 }
 
 .middle {
-
 }
 .bottom {
-
 }
-
 
 #plus img {
   width: 100%;
@@ -94,7 +90,7 @@ body {
   width: 375px;
 }
 
-#logo{
+#logo {
   margin-top: 150px;
   width: 80%;
   padding: 50px;
@@ -117,7 +113,7 @@ body {
 #arrow {
   margin-top: 30px;
   height: 100px;
-} 
+}
 
 #open {
   background-color: transparent;
@@ -126,3 +122,7 @@ body {
   box-sizing: content-box;
 }
 
+#tillbakaKnapp {
+  padding: 2vw;
+  max-width: 7vw;
+}
