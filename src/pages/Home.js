@@ -10,6 +10,13 @@ import CreateNewCapsule from "../components//CreateNewCapsule";
 import Popup from "react-animated-popup";
 import ClosedCapsule from "./AvailableCapsule";
 
+import Startsida2 from '../Startsida2.png';
+import jord from '../testjord2.png';
+import morkJord from '../morkjord2.png';
+import AspectImage from "../components/AspectImage"
+
+
+
 function Home() {
   const [capsules, setCapsules] = useState([]);
   const [visible, setVisible] = useState(false);
@@ -28,21 +35,22 @@ function Home() {
           onCanceled={() => setVisible(false)}
         />
       </Popup>
-      <div className="top">
+      <AspectImage className="top" src={Startsida2}>
         <button id="plus" type="button" onClick={() => setVisible(true)}>
           <img src={CapsulePlus} />
         </button>
-      </div>
-      <div className="middle">
+      </AspectImage>
+      <AspectImage className="middle" src={jord}>
         {capsules.map((capsuledata, index) => {
           return <Capsule data={capsuledata}></Capsule>;
         })}
-      </div>
-      <div className="bottom">
+      </AspectImage>
+      
+      <AspectImage className="bottom" src={morkJord}>
         <button id="open" type="button" onClick={() => setVisible(true)}>
           <img src={OpenedCapsule} />
         </button>
-      </div>
+      </AspectImage>
     </div>
   );
 }

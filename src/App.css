@@ -42,7 +42,6 @@ h1 {
 }
 
 body {
-  height: 3000pt;
 }
 
 .capsule {
@@ -66,25 +65,13 @@ body {
   background-color: black;
 }
 .top {
-  background-image: url("Startsida2.png");
-  background-size: cover; 
-  padding: 4em;
-  min-height: 800px;
- 
+
 }
 .middle {
-  background-image: url("./testjord2.png");
-  background-size: cover; 
-  height: 400pt;
-  width: 100%;
+
 }
 .bottom {
-  background-color: brown;
-  width: inherit;
-  background-image: url("./morkjord2.png"); 
-  background-size: cover; 
-  height: 400pt;
-  width: 100%;
+
 }
 
 #logo img{
