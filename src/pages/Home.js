@@ -30,8 +30,6 @@ function Home() {
     console.log(newCapsule);
     setCapsules([...capsules, newCapsule]); // lägger till den nya kaspeln i en array med alla andra
     setVisible(false);
-
-
   };
 
   return (
@@ -55,9 +53,14 @@ function Home() {
           return <Capsule data={capsuledata}></Capsule>;
         })}
       </AspectImage>
-      
+
       <AspectImage className="bottom" src={morkJord}>
-        <button id="open" type="button" onClick={() => setVisible(true)}>
+        <button
+          id="open"
+          type="button"
+          onClick={() => navigate("/capsule")}
+          style={{ cursor: "pointer" }}
+        >
           <img src={OpenedCapsule} />
         </button>
       </AspectImage>
