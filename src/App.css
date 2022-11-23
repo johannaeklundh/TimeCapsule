@@ -1,3 +1,5 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 .App {
   text-align: center;
 }
@@ -56,8 +58,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align:center;
-
+  text-align: center;
 }
 .capsuleContainer {
   display: flex;
@@ -74,9 +75,9 @@ body {
 
 }
 
-#logo img{
+/* #logo img{
   
-}
+} */
 
 #plus img {
   width: 100%;
@@ -95,7 +96,8 @@ body {
   width: 375px;
 }
 
-#plus { /* knapp bakom kapslar */
+#plus {
+  /* knapp bakom kapslar */
   background-color: transparent;
   border: none;
   padding: 0;
@@ -103,7 +105,7 @@ body {
   margin-top: 350px;
 }
 
-#open{
+#open {
   background-color: transparent;
   border: none;
   padding: 0;

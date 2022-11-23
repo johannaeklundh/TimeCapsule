@@ -5,10 +5,12 @@ import { useState } from "react";
 import Capsule from "../components/Capsule";
 import "react-datepicker/dist/react-datepicker.css";
 import CapsulePlus from "../CapsulePlus.png"; // with import
-import OpenedCapsule from "../openedCapsule.png";
+import OpenedCapsule from "../openedCapsule.png"; // tillgång att se bilderna
 import CreateNewCapsule from "../components//CreateNewCapsule";
 import Popup from "react-animated-popup";
 import ClosedCapsule from "./AvailableCapsule";
+import { useNavigate } from "react-router-dom";
+import Logo from "../Logo.png";
 
 import Startsida2 from '../Startsida2.png';
 import jord from '../testjord2.png';
@@ -20,11 +22,14 @@ import AspectImage from "../components/AspectImage"
 function Home() {
   const [capsules, setCapsules] = useState([]);
   const [visible, setVisible] = useState(false);
+  const navigate = useNavigate();
 
   const addCapsule = (newCapsule) => {
     console.log(newCapsule);
     setCapsules([...capsules, newCapsule]); // lägger till den nya kaspeln i en array med alla andra
     setVisible(false);
+
+
   };
 
   return (
