@@ -67,10 +67,12 @@ body {
   background-color: black;
 }
 .top {
-  background-image: url("Startsida2.png");
+  background-image: url("Startsida3.png");
   background-size: cover;
   padding: 4em;
   min-height: 800px;
+  display: flex;
+  flex-direction: column;
 }
 .middle {
   background-image: url("./testjord2.png");
@@ -81,8 +83,8 @@ body {
 .bottom {
   background-color: brown;
   width: inherit;
-  background-image: url("./morkjord2.png"); 
-  background-size: cover; 
+  background-image: url("./morkjord2.png");
+  background-size: cover;
   height: 400pt;
   width: 100%;
 }
