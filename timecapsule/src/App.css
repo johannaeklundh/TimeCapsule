@@ -88,7 +88,7 @@ body {
   width: 375px;
 }
 
-#plus {
+#plus { /* knapp bakom kapslar */
   background-color: transparent;
   border: none;
   padding: 0;
