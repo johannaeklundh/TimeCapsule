@@ -66,18 +66,12 @@ body {
   background-color: black;
 }
 .top {
-
 }
-.middle {
 
+.middle {
 }
 .bottom {
-
 }
-
-/* #logo img{
-  
-} */
 
 #plus img {
   width: 100%;
@@ -96,6 +90,11 @@ body {
   width: 375px;
 }
 
+#logo {
+  margin-top: 150px;
+  width: 80%;
+  padding: 50px;
+}
 
 #plus {
   /* knapp bakom kapslar */
@@ -103,18 +102,32 @@ body {
   border: none;
   padding: 0;
   box-sizing: content-box;
-  margin-top: 350px;
+  margin-top: 50px;
+}
+
+#memorylane {
+  margin-top: 60px;
+  width: 300px;
+}
+
+#arrow {
+  margin-top: 30px;
+  height: 100px;
 }
 
 #open {
   background-color: transparent;
   border: none;
-  padding: 0;
+  padding: 5vw;
   box-sizing: content-box;
 }
 
-.popup {
-transition: 400ms;
-background: red;
+#tillbakaKnapp {
+  padding: 2vw;
+  max-width: 7vw;
 }
 
+#brown {
+  height: 100vh;
+  background-color: rgb(103, 80, 66);
+}

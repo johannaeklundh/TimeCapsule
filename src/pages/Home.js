@@ -10,12 +10,14 @@ import CreateNewCapsule from "../components//CreateNewCapsule";
 import Popup from "react-animated-popup";
 import ClosedCapsule from "./AvailableCapsule";
 import { useNavigate } from "react-router-dom";
-import Logo from "../Logo.png";
 
 import Startsida2 from "../Startsida2.png";
 import jord from "../testjord2.png";
 import morkJord from "../morkjord2.png";
 import AspectImage from "../components/AspectImage";
+import Logo from "../Logo.png";
+import MemoryLane from "../memorylane.png";
+import Arrow from "../arrow.png";
 
 function Home() {
   const [capsules, setCapsules] = useState([]);
@@ -31,9 +33,12 @@ function Home() {
   return (
     <div className="container">
       <AspectImage className="top" src={Startsida2}>
+        <img id="logo" src={Logo} />
         <button id="plus" type="button" onClick={() => setVisible(true)}>
           <img src={CapsulePlus} />
         </button>
+        <img id="memorylane" src={MemoryLane} />
+        <img id="arrow" src={Arrow} />
       </AspectImage>
 
       <CreateNewCapsule
@@ -55,6 +60,25 @@ function Home() {
       </AspectImage>
 
       <AspectImage className="bottom" src={morkJord}>
+        <h3>Snattartiden</h3>
+        <button
+          id="open"
+          type="button"
+          onClick={() => navigate("/capsule")}
+          style={{ cursor: "pointer" }}
+        >
+          <img src={OpenedCapsule} />
+        </button>
+        <h3>Sommar 2022</h3>
+        <button
+          id="open"
+          type="button"
+          onClick={() => navigate("/capsule")}
+          style={{ cursor: "pointer" }}
+        >
+          <img src={OpenedCapsule} />
+        </button>
+        <h3>Vinter 2021</h3>
         <button
           id="open"
           type="button"
