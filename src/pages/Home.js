@@ -12,12 +12,10 @@ import ClosedCapsule from "./AvailableCapsule";
 import { useNavigate } from "react-router-dom";
 import Logo from "../Logo.png";
 
-import Startsida2 from '../Startsida2.png';
-import jord from '../testjord2.png';
-import morkJord from '../morkjord2.png';
-import AspectImage from "../components/AspectImage"
-
-
+import Startsida2 from "../Startsida2.png";
+import jord from "../testjord2.png";
+import morkJord from "../morkjord2.png";
+import AspectImage from "../components/AspectImage";
 
 function Home() {
   const [capsules, setCapsules] = useState([]);
@@ -28,8 +26,6 @@ function Home() {
     console.log(newCapsule);
     setCapsules([...capsules, newCapsule]); // lägger till den nya kaspeln i en array med alla andra
     setVisible(false);
-
-
   };
 
   return (
@@ -50,9 +46,14 @@ function Home() {
           return <Capsule data={capsuledata}></Capsule>;
         })}
       </AspectImage>
-      
+
       <AspectImage className="bottom" src={morkJord}>
-        <button id="open" type="button" onClick={() => setVisible(true)}>
+        <button
+          id="open"
+          type="button"
+          onClick={() => navigate("/capsule")}
+          style={{ cursor: "pointer" }}
+        >
           <img src={OpenedCapsule} />
         </button>
       </AspectImage>
