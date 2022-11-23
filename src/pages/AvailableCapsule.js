@@ -8,7 +8,7 @@ const AvailableCapsule = (props) => {
   const navigate = useNavigate();
 
   return (
-    <div className="Component">
+    <div className="Component" id="brown">
       {/* CSSen för denna bild ligger i app.ss */}
 
       <button onClick={() => navigate("/")}>
@@ -16,7 +16,7 @@ const AvailableCapsule = (props) => {
         <img src={pil} id="tillbakaKnapp" />{" "}
       </button>
 
-      <h1>Hej Johanna</h1>
+      <h1>Snattartiden</h1>
 
       <SlideShow></SlideShow>
     </div>

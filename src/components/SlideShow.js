@@ -1,17 +1,25 @@
 import ImageGallery from "react-image-gallery";
+import Grupp1 from "../gruppbild1.jpg";
+import Grupp2 from "../gruppbild2.jpg";
+import Grupp3 from "../gruppbild3.jpg";
+import EE from "../EbbaEmil.jpg";
 
 const images = [
   {
-    original: "https://picsum.photos/id/1018/1000/600/",
-    thumbnail: "https://picsum.photos/id/1018/250/150/",
+    original: Grupp1,
+    thumbnail: Grupp1,
   },
   {
-    original: "https://picsum.photos/id/1015/1000/600/",
-    thumbnail: "https://picsum.photos/id/1015/250/150/",
+    original: Grupp2,
+    thumbnail: Grupp2,
   },
   {
-    original: "https://picsum.photos/id/1019/1000/600/",
-    thumbnail: "https://picsum.photos/id/1019/250/150/",
+    original: Grupp3,
+    thumbnail: Grupp3,
+  },
+  {
+    original: EE,
+    thumbnail: EE,
   },
 ];
 const SlideShow = () => {

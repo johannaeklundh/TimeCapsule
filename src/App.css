@@ -126,3 +126,8 @@ body {
   padding: 2vw;
   max-width: 7vw;
 }
+
+#brown {
+  height: 100vh;
+  background-color: rgb(103, 80, 66);
+}

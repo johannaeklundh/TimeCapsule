@@ -53,6 +53,7 @@ function Home() {
       </AspectImage>
 
       <AspectImage className="bottom" src={morkJord}>
+        <h3>Snattartiden</h3>
         <button
           id="open"
           type="button"
@@ -61,6 +62,7 @@ function Home() {
         >
           <img src={OpenedCapsule} />
         </button>
+        <h3>Sommar 2022</h3>
         <button
           id="open"
           type="button"
@@ -69,6 +71,7 @@ function Home() {
         >
           <img src={OpenedCapsule} />
         </button>
+        <h3>Vinter 2021</h3>
         <button
           id="open"
           type="button"
