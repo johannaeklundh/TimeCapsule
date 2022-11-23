@@ -2,7 +2,7 @@ import App from "../App";
 import { useState } from "react";
 import DatePicker from "react-datepicker";
 
-const CreateNewCapsule = ({ onCapsule, onCanceled }) => {
+const CreateNewCapsule = ({ onCapsule, onCanceled, visible }) => {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
   const [textInput, setTextInput] = useState("");
@@ -25,7 +25,7 @@ const CreateNewCapsule = ({ onCapsule, onCanceled }) => {
   };
 
   return (
-    <div className="popup">
+    <div className="popup" style={{height: visible ? 200 : 0}}>
       <form>
         <label htmlFor="Memoryname">Name Memory:</label>
         <input
@@ -49,6 +49,7 @@ const CreateNewCapsule = ({ onCapsule, onCanceled }) => {
       <button type="button" onClick={createCapsule}>
         Done
       </button>
+
     </div>
   );
 };

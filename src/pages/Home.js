@@ -30,17 +30,24 @@ function Home() {
 
   return (
     <div className="container">
-      <Popup visible={visible} onClose={() => setVisible(false)}>
-        <CreateNewCapsule
-          onCapsule={addCapsule}
-          onCanceled={() => setVisible(false)}
-        />
-      </Popup>
       <AspectImage className="top" src={Startsida2}>
         <button id="plus" type="button" onClick={() => setVisible(true)}>
           <img src={CapsulePlus} />
         </button>
       </AspectImage>
+
+      <CreateNewCapsule
+          onCapsule={addCapsule}
+          onCanceled={() => setVisible(false)}
+          visible={visible}
+        />
+
+<AspectImage className="top" src={Startsida2}>
+        <button id="plus" type="button" onClick={() => setVisible(true)}>
+          <img src={CapsulePlus} />
+        </button>
+      </AspectImage>
+
       <AspectImage className="middle" src={jord}>
         {capsules.map((capsuledata, index) => {
           return <Capsule data={capsuledata}></Capsule>;

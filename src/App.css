@@ -96,6 +96,7 @@ body {
   width: 375px;
 }
 
+
 #plus {
   /* knapp bakom kapslar */
   background-color: transparent;
@@ -111,3 +112,9 @@ body {
   padding: 0;
   box-sizing: content-box;
 }
+
+.popup {
+transition: 400ms;
+background: red;
+}
+
