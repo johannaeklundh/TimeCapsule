@@ -8,6 +8,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import CapsulePlus from "./CapsulePlusRemovebg.png"; // with import
 import OpenedCapsule from "./OpenedCapsule.png";
 
+
 function App() {
   const [capsules, setCapsules] = useState([]);
   const [visible, setVisible] = useState(false);
@@ -67,8 +68,11 @@ function App() {
       </Popup>
 
       <div className="top">
+        <div img src="Logo.png">
+        </div>
         <button id="plus" type="button" onClick={() => setVisible(true)}>
           <img src={CapsulePlus} />
+          
         </button>
       </div>
       <div className="middle">
