@@ -68,6 +68,7 @@ body {
 .top {
 
 }
+
 .middle {
 
 }
@@ -75,9 +76,6 @@ body {
 
 }
 
-/* #logo img{
-  
-} */
 
 #plus img {
   width: 100%;
@@ -94,6 +92,12 @@ body {
 
 #open img {
   width: 375px;
+}
+
+#logo{
+  margin-top: 150px;
+  width: 80%;
+  padding: 50px;
 }
 
 #plus {
@@ -102,8 +106,18 @@ body {
   border: none;
   padding: 0;
   box-sizing: content-box;
-  margin-top: 350px;
+  margin-top: 50px;
 }
+
+#memorylane {
+  margin-top: 60px;
+  width: 300px;
+}
+
+#arrow {
+  margin-top: 30px;
+  height: 100px;
+} 
 
 #open {
   background-color: transparent;
