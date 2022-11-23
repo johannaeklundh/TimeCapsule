@@ -83,6 +83,10 @@ body {
 .bottom {
   background-color: brown;
   width: inherit;
+  background-image: url("./morkjord2.png"); 
+  background-size: cover; 
+  height: 400pt;
+  width: 100%;
 }
 
 #logo img{
