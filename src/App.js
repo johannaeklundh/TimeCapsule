@@ -1,7 +1,6 @@
 import Home from "./pages/Home";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { ClosedCapsule } from "./pages/AvailableCapsule";
-
+import AvailableCapsule from "./pages/AvailableCapsule";
 
 function App() {
   return (
@@ -22,7 +21,7 @@ function App() {
             renders the first one that matches the current URL. */}
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/capsule" element={<ClosedCapsule />} />
+          <Route path="/capsule" element={<AvailableCapsule />} />
         </Routes>
       </div>
     </Router>

@@ -8,7 +8,7 @@ import CapsulePlus from "../CapsulePlus.png"; // with import
 import OpenedCapsule from "../openedCapsule.png";
 import CreateNewCapsule from "../components//CreateNewCapsule";
 import Popup from "react-animated-popup";
-import { ClosedCapsule } from "./AvailableCapsule";
+import ClosedCapsule from "./AvailableCapsule";
 
 function Home() {
   const [capsules, setCapsules] = useState([]);

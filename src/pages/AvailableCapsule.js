@@ -9,4 +9,4 @@ const AvailableCapsule = (props) => {
   );
 };
 
-export { AvailableCapsule };
+export default AvailableCapsule;
