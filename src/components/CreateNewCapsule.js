@@ -41,7 +41,7 @@ const CreateNewCapsule = ({ onCapsule, onCanceled, visible }) => {
         />
         <p>Select enddate:</p>
         <DatePicker selected={endDate} onChange={(date) => setEndDate(date)} />
-        <br></br>
+        <br></br> 
       </form>
       <button type="button" onClick={onCanceled}>
         Cancel
