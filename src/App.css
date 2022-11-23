@@ -118,7 +118,7 @@ body {
 #open {
   background-color: transparent;
   border: none;
-  padding: 0;
+  padding: 5vw;
   box-sizing: content-box;
 }
 

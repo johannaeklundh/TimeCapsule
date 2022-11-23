@@ -11,16 +11,13 @@ import Popup from "react-animated-popup";
 import ClosedCapsule from "./AvailableCapsule";
 import { useNavigate } from "react-router-dom";
 
-
-import Startsida2 from '../Startsida2.png';
-import jord from '../testjord2.png';
-import morkJord from '../morkjord2.png';
-import AspectImage from "../components/AspectImage"
+import Startsida2 from "../Startsida2.png";
+import jord from "../testjord2.png";
+import morkJord from "../morkjord2.png";
+import AspectImage from "../components/AspectImage";
 import Logo from "../Logo.png";
 import MemoryLane from "../memorylane.png";
 import Arrow from "../arrow.png";
-
-
 
 function Home() {
   const [capsules, setCapsules] = useState([]);
@@ -62,11 +59,25 @@ function Home() {
           onClick={() => navigate("/capsule")}
           style={{ cursor: "pointer" }}
         >
-          <img src={OpenedCapsule}/>
+          <img src={OpenedCapsule} />
+        </button>
+        <button
+          id="open"
+          type="button"
+          onClick={() => navigate("/capsule")}
+          style={{ cursor: "pointer" }}
+        >
+          <img src={OpenedCapsule} />
+        </button>
+        <button
+          id="open"
+          type="button"
+          onClick={() => navigate("/capsule")}
+          style={{ cursor: "pointer" }}
+        >
+          <img src={OpenedCapsule} />
         </button>
       </AspectImage>
-
-
     </div>
   );
 }
