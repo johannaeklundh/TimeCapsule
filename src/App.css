@@ -83,7 +83,7 @@ body {
 }
 
 #plus img {
-  width: 375px;
+  width: 200px;
 }
 
 #open img {
@@ -91,9 +91,9 @@ body {
 }
 
 #logo {
-  margin-top: 100px;
+  margin-top: 150px;
   width: 60%;
-  padding: 50px;
+  padding: 5px;
 }
 
 #plus {
@@ -102,17 +102,17 @@ body {
   border: none;
   padding: 0;
   box-sizing: content-box;
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 #memorylane {
-  margin-top: 60px;
-  width: 300px;
+  padding: 10px;
+  width: 200px;
 }
 
 #arrow {
-  margin-top: 30px;
   height: 100px;
+  
 }
 
 #open {
