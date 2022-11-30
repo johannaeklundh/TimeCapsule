@@ -25,7 +25,7 @@ const CreateNewCapsule = ({ onCapsule, onCanceled, visible }) => {
   };
 
   return (
-    <div className="popup" style={{height: visible ? 200 : 0}}>
+    <div className="popup" style={{display: visible ? "inline-block" : "none"}}>
       <form>
         <label htmlFor="Memoryname">Name Memory:</label>
         <input
@@ -43,11 +43,17 @@ const CreateNewCapsule = ({ onCapsule, onCanceled, visible }) => {
         <DatePicker selected={endDate} onChange={(date) => setEndDate(date)} />
         <br></br> 
       </form>
-      <button type="button" onClick={onCanceled}>
-        Cancel
+      <button 
+        type="button" 
+        class="popupbutton"
+        onClick={onCanceled}>
+          Cancel
       </button>
-      <button type="button" onClick={createCapsule}>
-        Done
+      <button 
+        type="button" 
+        class="popupbutton"
+        onClick={createCapsule}>
+          Done
       </button>
 
     </div>
