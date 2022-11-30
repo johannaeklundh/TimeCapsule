@@ -18,8 +18,6 @@ import AspectImage from "../components/AspectImage";
 import Logo from "../Logo.png";
 import MemoryLane from "../memorylane.png";
 import Arrow from "../arrow.png";
-import top from "../top.png";
-import bottom from "../bottom.png";
 
 function Home() {
   const [capsules, setCapsules] = useState([]);
@@ -31,14 +29,10 @@ function Home() {
     setCapsules([...capsules, newCapsule]); // lägger till den nya kaspeln i en array med alla andra
     setVisible(false);
   };
- 
+
   return (
     <div className="container">
-<<<<<<< Updated upstream
       <AspectImage className="top" src={Startsida3}>
-=======
-      <AspectImage className="top" src={top}>
->>>>>>> Stashed changes
         <img id="logo" src={Logo} />
         <button id="plus" type="button" onClick={() => setVisible(true)}>
           <img src={CapsulePlus} />
@@ -48,21 +42,15 @@ function Home() {
       </AspectImage>
 
       <CreateNewCapsule
-          onCapsule={addCapsule}
-          onCanceled={() => setVisible(false)}
-          visible={visible}
-        />
+        onCapsule={addCapsule}
+        onCanceled={() => setVisible(false)}
+        visible={visible}
+      />
 
-<<<<<<< Updated upstream
-<AspectImage className="top" src={Startsida3}>
+      <AspectImage className="top" src={Startsida3}>
         <button id="plus" type="button" onClick={() => setVisible(true)}>
           <img src={CapsulePlus} />
         </button>
-=======
-<AspectImage className="top" src={bottom}>
-        
-       
->>>>>>> Stashed changes
       </AspectImage>
 
       <AspectImage className="middle" src={jord}>
