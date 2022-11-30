@@ -11,15 +11,16 @@ import Popup from "react-animated-popup";
 import ClosedCapsule from "./AvailableCapsule";
 import { useNavigate } from "react-router-dom";
 
-import Startsida3 from "../Startsida3.png";
+
 import jord from "../testjord2.png";
 import morkJord from "../morkjord2.png";
 import AspectImage from "../components/AspectImage";
 import Logo from "../Logo.png";
 import MemoryLane from "../memorylane.png";
 import Arrow from "../arrow.png";
-import top from "../top.png";
-import bottom from "../bottom.png";
+import lower from "../startsida_lower.png";
+import upper from "../startsida_upper.png";
+
 
 function Home() {
   const [capsules, setCapsules] = useState([]);
@@ -31,27 +32,25 @@ function Home() {
     setCapsules([...capsules, newCapsule]); // lägger till den nya kaspeln i en array med alla andra
     setVisible(false);
   };
- 
+
   return (
     <div className="container">
-      <AspectImage className="top" src={top}>
+      <AspectImage className="top" src={upper}>
         <img id="logo" src={Logo} />
         <button id="plus" type="button" onClick={() => setVisible(true)}>
           <img src={CapsulePlus} />
         </button>
-        <img id="memorylane" src={MemoryLane} />
-        <img id="arrow" src={Arrow} />
       </AspectImage>
 
       <CreateNewCapsule
-          onCapsule={addCapsule}
-          onCanceled={() => setVisible(false)}
-          visible={visible}
-        />
+        onCapsule={addCapsule}
+        onCanceled={() => setVisible(false)}
+        visible={visible}
+      />
 
-<AspectImage className="top" src={bottom}>
-        
-       
+      <AspectImage className="top" src={lower}>
+      <img id="memorylane" src={MemoryLane} />
+        <img id="arrow" src={Arrow} />
       </AspectImage>
 
       <AspectImage className="middle" src={jord}>
