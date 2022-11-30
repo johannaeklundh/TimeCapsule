@@ -137,6 +137,14 @@ body {
 #tillbakaKnapp {
   padding: 2vw;
   max-width: 7vw;
+  background-color: transparent;
+  border: 1px solid rgb(125, 74, 15);
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  color: transparent;
+  line-height: 29px;
+  vertical-align: middle;
+  
 }
 
 #brown {
@@ -145,10 +153,9 @@ body {
 }
 
 .popup {
-
 background-color: #443018;
-
 }
 
-
-
+.button {
+  background-color: rgb(103, 80, 66);
+}
