@@ -34,11 +34,7 @@ function Home() {
  
   return (
     <div className="container">
-<<<<<<< Updated upstream
-      <AspectImage className="top" src={Startsida3}>
-=======
       <AspectImage className="top" src={top}>
->>>>>>> Stashed changes
         <img id="logo" src={Logo} />
         <button id="plus" type="button" onClick={() => setVisible(true)}>
           <img src={CapsulePlus} />
@@ -53,16 +49,9 @@ function Home() {
           visible={visible}
         />
 
-<<<<<<< Updated upstream
-<AspectImage className="top" src={Startsida3}>
-        <button id="plus" type="button" onClick={() => setVisible(true)}>
-          <img src={CapsulePlus} />
-        </button>
-=======
 <AspectImage className="top" src={bottom}>
         
        
->>>>>>> Stashed changes
       </AspectImage>
 
       <AspectImage className="middle" src={jord}>
