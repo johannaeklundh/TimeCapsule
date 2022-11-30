@@ -114,13 +114,17 @@ body {
 }
 
 #memorylane {
-  padding: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-top: 25px;
   width: 200px;
 }
 
 #arrow {
-  height: 100px;
-  
+  height: 60px;
+  margin-top: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 #open {
