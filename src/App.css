@@ -72,6 +72,11 @@ body {
 .middle {
 }
 
+.component {
+  font-family: Tahoma;
+  color:lightgoldenrodyellow;
+}
+
 .bottom {
   background-image: url("./morkjord2.png");
 }
@@ -150,7 +155,7 @@ body {
 
 #brown {
   height: 100vh;
-  background-color: rgb(103, 80, 66);
+  background-color: #443018;
 }
 .image-item {
   display: flex;
