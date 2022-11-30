@@ -55,6 +55,7 @@ body {
   margin: 5vw;
 }
 .container {
+  background-color: #EFC88F ;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,3 +132,12 @@ body {
   height: 100vh;
   background-color: rgb(103, 80, 66);
 }
+
+.popup {
+
+background-color: #443018;
+
+}
+
+
+
