@@ -71,12 +71,14 @@ body {
 
 .middle {
 }
+
 .bottom {
   background-image: url("./morkjord2.png");
 }
 
 #plus img {
   width: 100%;
+
 }
 
 #open img {
