@@ -55,6 +55,7 @@ body {
   margin: 5vw;
 }
 .container {
+  background-color: #EFC88F ;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,6 +67,8 @@ body {
   background-color: black;
 }
 .top {
+
+
 }
 
 .middle {
@@ -100,9 +103,14 @@ body {
   /* knapp bakom kapslar */
   background-color: transparent;
   border: none;
-  padding: 0;
   box-sizing: content-box;
   margin-top: 10px;
+}
+
+.img CapsulePlus {
+
+  width: 40px;
+
 }
 
 #memorylane {
@@ -131,3 +139,12 @@ body {
   height: 100vh;
   background-color: rgb(103, 80, 66);
 }
+
+.popup {
+
+background-color: #443018;
+
+}
+
+
+
