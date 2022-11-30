@@ -40,8 +40,6 @@ function Home() {
         <button id="plus" type="button" onClick={() => setVisible(true)}>
           <img src={CapsulePlus} />
         </button>
-        <img id="memorylane" src={MemoryLane} />
-        <img id="arrow" src={Arrow} />
       </AspectImage>
 
       <CreateNewCapsule
@@ -51,7 +49,8 @@ function Home() {
       />
 
       <AspectImage className="top" src={lower}>
-        
+      <img id="memorylane" src={MemoryLane} />
+        <img id="arrow" src={Arrow} />
       </AspectImage>
 
       <AspectImage className="middle" src={jord}>
