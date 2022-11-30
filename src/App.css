@@ -67,18 +67,18 @@ body {
   background-color: black;
 }
 .top {
-
-
 }
 
 .middle {
 }
+
 .bottom {
   background-image: url("./morkjord2.png");
 }
 
 #plus img {
   width: 100%;
+
 }
 
 #open img {
@@ -108,10 +108,13 @@ body {
   margin-top: 10px;
 }
 
+#plus img:hover {
+  box-shadow: black 0 2px 5px 0;
+  border-radius: 300px;
+}
+
 .img CapsulePlus {
-
   width: 40px;
-
 }
 
 #memorylane {
@@ -163,7 +166,6 @@ body {
   color: white;
   font-family: Tahoma;
   box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
-
 }
 
 .button {
