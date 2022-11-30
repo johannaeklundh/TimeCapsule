@@ -2,7 +2,7 @@ const Capsule = ({ data }) => {
   return (
     <p>
       {" "}
-      {data.name} {data.day}
+      {data.name} {Math.floor(data.day)}
     </p>
   );
 };
