@@ -74,6 +74,7 @@ body {
 .middle {
 }
 .bottom {
+  background-image: url("./morkjord2.png");
 }
 
 #plus img {
@@ -135,8 +136,20 @@ body {
 }
 
 #tillbakaKnapp {
-  padding: 2vw;
+  padding: 6px;
+  margin: 8px;
   max-width: 7vw;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: transparent;
+  vertical-align: middle;
+  
+}
+
+#tillbakaKnapp:hover {
+  box-shadow: black 0 2px 5px 0;
+
 }
 
 #brown {
