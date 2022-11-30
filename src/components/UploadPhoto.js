@@ -49,7 +49,7 @@ const UploadPhoto = ({ data, onDone }) => {
                 </div>
               </div>
             ))}
-            <p onClick={onImageRemoveAll}>Cancel</p>
+            <p onClick={onImageRemoveAll}>Remove all</p>
           </div>
         )}
       </ImageUploading>
