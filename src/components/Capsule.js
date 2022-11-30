@@ -22,9 +22,9 @@ const Capsule = ({ data }) => {
       break;
     case "edit":
       return (
-        <div>
+        <div onClick={() => setType("upload")}>
           <img id="logo" src={ClosedCapsule} />
-          <p onClick={() => setType("upload")}>{data.name}</p>
+          <p>{data.name}</p>
           <TimeLeft capsule={data}></TimeLeft>
         </div>
       );

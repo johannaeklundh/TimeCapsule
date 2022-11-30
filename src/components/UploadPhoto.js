@@ -15,7 +15,7 @@ const UploadPhoto = ({ data, onDone }) => {
 
   return (
     <p>
-      {data.name} {Math.floor(data.day)}
+      {data.name}
       <ImageUploading
         multiple
         value={images}
@@ -49,11 +49,11 @@ const UploadPhoto = ({ data, onDone }) => {
                 </div>
               </div>
             ))}
-            <p onClick={onImageRemoveAll}>Remove all</p>
+            <button onClick={onImageRemoveAll}> Remove all</button>
           </div>
         )}
       </ImageUploading>
-      <button onClick={onDone}> DONE</button>
+      <button onClick={onDone}> Done</button>
     </p>
   );
 };
