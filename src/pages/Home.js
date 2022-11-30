@@ -3,6 +3,7 @@ import "../App.css";
 import { useState } from "react";
 
 import Capsule from "../components/Capsule";
+import UploadPhoto from "../components/UploadPhoto";
 import "react-datepicker/dist/react-datepicker.css";
 import CapsulePlus from "../CapsulePlus.png"; // with import
 import OpenedCapsule from "../openedCapsule.png"; // tillgång att se bilderna
@@ -19,14 +20,20 @@ import Logo from "../Logo.png";
 import MemoryLane from "../memorylane.png";
 import Arrow from "../arrow.png";
 
+let capsuleStorage = JSON.parse(window.localStorage.getItem("capsules"));
+capsuleStorage = capsuleStorage == null ? [] : capsuleStorage;
+console.log(capsuleStorage);
+
 function Home() {
-  const [capsules, setCapsules] = useState([]);
+  const [capsules, setCapsules] = useState(capsuleStorage);
   const [visible, setVisible] = useState(false);
   const navigate = useNavigate();
 
   const addCapsule = (newCapsule) => {
     console.log(newCapsule);
-    setCapsules([...capsules, newCapsule]); // lägger till den nya kaspeln i en array med alla andra
+    const newState = [...capsules, newCapsule];
+    window.localStorage.setItem("capsules", JSON.stringify(newState));
+    setCapsules(newState); // lägger till den nya kaspeln i en array med alla andra
     setVisible(false);
   };
 
@@ -42,12 +49,12 @@ function Home() {
       </AspectImage>
 
       <CreateNewCapsule
-          onCapsule={addCapsule}
-          onCanceled={() => setVisible(false)}
-          visible={visible}
-        />
+        onCapsule={addCapsule}
+        onCanceled={() => setVisible(false)}
+        visible={visible}
+      />
 
-<AspectImage className="top" src={Startsida2}>
+      <AspectImage className="top" src={Startsida2}>
         <button id="plus" type="button" onClick={() => setVisible(true)}>
           <img src={CapsulePlus} />
         </button>

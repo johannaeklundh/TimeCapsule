@@ -131,3 +131,9 @@ body {
   height: 100vh;
   background-color: rgb(103, 80, 66);
 }
+.image-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

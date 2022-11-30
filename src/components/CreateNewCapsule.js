@@ -14,7 +14,8 @@ const CreateNewCapsule = ({ onCapsule, onCanceled, visible }) => {
     if (days <= 0) return;
     const newCapsule = {
       name: textInput,
-      day: days,
+      startDate: startDate.toISOString(),
+      endDate: endDate.toISOString(),
     }; //skapar ny kapsel med namnet testInput
     onCapsule(newCapsule);
   };
@@ -25,7 +26,7 @@ const CreateNewCapsule = ({ onCapsule, onCanceled, visible }) => {
   };
 
   return (
-    <div className="popup" style={{height: visible ? 200 : 0}}>
+    <div className="popup" style={{ height: visible ? 200 : 0 }}>
       <form>
         <label htmlFor="Memoryname">Name Memory:</label>
         <input
@@ -41,7 +42,7 @@ const CreateNewCapsule = ({ onCapsule, onCanceled, visible }) => {
         />
         <p>Select enddate:</p>
         <DatePicker selected={endDate} onChange={(date) => setEndDate(date)} />
-        <br></br> 
+        <br></br>
       </form>
       <button type="button" onClick={onCanceled}>
         Cancel
@@ -49,7 +50,6 @@ const CreateNewCapsule = ({ onCapsule, onCanceled, visible }) => {
       <button type="button" onClick={createCapsule}>
         Done
       </button>
-
     </div>
   );
 };
