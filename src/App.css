@@ -55,6 +55,7 @@ body {
   margin: 5vw;
 }
 .container {
+  background-color: #EFC88F ;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -93,8 +94,8 @@ body {
 }
 
 #logo {
-  margin-top: 150px;
-  width: 80%;
+  margin-top: 100px;
+  width: 60%;
   padding: 50px;
 }
 
@@ -138,3 +139,12 @@ body {
   height: 100vh;
   background-color: rgb(103, 80, 66);
 }
+
+.popup {
+
+background-color: #443018;
+
+}
+
+
+

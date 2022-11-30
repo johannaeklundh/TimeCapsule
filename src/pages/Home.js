@@ -11,13 +11,15 @@ import Popup from "react-animated-popup";
 import ClosedCapsule from "./AvailableCapsule";
 import { useNavigate } from "react-router-dom";
 
-import Startsida2 from "../Startsida2.png";
+import Startsida3 from "../Startsida3.png";
 import jord from "../testjord2.png";
 import morkJord from "../morkjord2.png";
 import AspectImage from "../components/AspectImage";
 import Logo from "../Logo.png";
 import MemoryLane from "../memorylane.png";
 import Arrow from "../arrow.png";
+import top from "../top.png";
+import bottom from "../bottom.png";
 
 function Home() {
   const [capsules, setCapsules] = useState([]);
@@ -29,10 +31,14 @@ function Home() {
     setCapsules([...capsules, newCapsule]); // lägger till den nya kaspeln i en array med alla andra
     setVisible(false);
   };
-
+ 
   return (
     <div className="container">
-      <AspectImage className="top" src={Startsida2}>
+<<<<<<< Updated upstream
+      <AspectImage className="top" src={Startsida3}>
+=======
+      <AspectImage className="top" src={top}>
+>>>>>>> Stashed changes
         <img id="logo" src={Logo} />
         <button id="plus" type="button" onClick={() => setVisible(true)}>
           <img src={CapsulePlus} />
@@ -47,10 +53,16 @@ function Home() {
           visible={visible}
         />
 
-<AspectImage className="top" src={Startsida2}>
+<<<<<<< Updated upstream
+<AspectImage className="top" src={Startsida3}>
         <button id="plus" type="button" onClick={() => setVisible(true)}>
           <img src={CapsulePlus} />
         </button>
+=======
+<AspectImage className="top" src={bottom}>
+        
+       
+>>>>>>> Stashed changes
       </AspectImage>
 
       <AspectImage className="middle" src={jord}>
