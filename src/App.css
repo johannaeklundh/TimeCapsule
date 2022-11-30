@@ -74,6 +74,7 @@ body {
 .middle {
 }
 .bottom {
+  background-image: url("./morkjord2.png");
 }
 
 #plus img {
@@ -153,7 +154,12 @@ body {
 }
 
 .popup {
-background-color: #443018;
+
+  background-color: #443018;
+  color: white;
+  font-family: Tahoma;
+  box-shadow: 0 0 15px 4px rgba(0,0,0,0.06);
+
 }
 
 .button {

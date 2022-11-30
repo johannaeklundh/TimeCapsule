@@ -34,12 +34,12 @@ const CreateNewCapsule = ({ onCapsule, onCanceled, visible }) => {
           name="Memoryname"
           onChange={capsuleNameHandler}
         ></input>
-        <p>Select startdate:</p>
+        <p>Select start date:</p>
         <DatePicker
           selected={startDate}
           onChange={(date) => setStartDate(date)}
         />
-        <p>Select enddate:</p>
+        <p>Select end date:</p>
         <DatePicker selected={endDate} onChange={(date) => setEndDate(date)} />
         <br></br> 
       </form>
