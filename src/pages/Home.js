@@ -9,7 +9,6 @@ import CapsulePlus from "../CapsulePlus.png"; // with import
 import OpenedCapsule from "../openedCapsule.png"; // tillgång att se bilderna
 import CreateNewCapsule from "../components//CreateNewCapsule";
 import Popup from "react-animated-popup";
-import ClosedCapsule from "./AvailableCapsule";
 import { useNavigate } from "react-router-dom";
 
 import jord from "../testjord2.png";
