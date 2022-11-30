@@ -55,6 +55,7 @@ body {
   margin: 5vw;
 }
 .container {
+  background-color: #efc88f;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,6 +72,7 @@ body {
 .middle {
 }
 .bottom {
+  background-image: url("./morkjord2.png");
 }
 
 #plus img {
@@ -83,7 +85,7 @@ body {
 }
 
 #plus img {
-  width: 375px;
+  width: 200px;
 }
 
 #open img {
@@ -92,27 +94,34 @@ body {
 
 #logo {
   margin-top: 150px;
-  width: 80%;
-  padding: 50px;
+  width: 60%;
+  padding: 5px;
 }
 
 #plus {
   /* knapp bakom kapslar */
   background-color: transparent;
   border: none;
-  padding: 0;
   box-sizing: content-box;
-  margin-top: 50px;
+  margin-top: 10px;
+}
+
+.img CapsulePlus {
+  width: 40px;
 }
 
 #memorylane {
-  margin-top: 60px;
-  width: 300px;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-top: 25px;
+  width: 200px;
 }
 
 #arrow {
-  margin-top: 30px;
-  height: 100px;
+  height: 60px;
+  margin-top: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 #open {
@@ -123,8 +132,18 @@ body {
 }
 
 #tillbakaKnapp {
-  padding: 2vw;
+  padding: 6px;
+  margin: 8px;
   max-width: 7vw;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: transparent;
+  vertical-align: middle;
+}
+
+#tillbakaKnapp:hover {
+  box-shadow: black 0 2px 5px 0;
 }
 
 #brown {
@@ -137,3 +156,39 @@ body {
   justify-content: center;
   align-items: center;
 }
+
+.popup {
+  background-color: #443018;
+  color: white;
+  font-family: Tahoma;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.popupbutton {
+  background-color: blue;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  padding: 3px 10px;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+}
+
+#plus:hover {
+  transform: scale(
+    1.1
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/*
+input [type=text] {
+  border-radius: 5px;
+  padding: 5px 10px; 
+}
+*/

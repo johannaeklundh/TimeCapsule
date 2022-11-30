@@ -11,10 +11,8 @@ const AvailableCapsule = (props) => {
     <div className="Component" id="brown">
       {/* CSSen för denna bild ligger i app.ss */}
 
-      <button onClick={() => navigate("/")}>
-        {" "}
-        <img src={pil} id="tillbakaKnapp" />{" "}
-      </button>
+        <img src={pil} id="tillbakaKnapp" onClick={() => navigate("/")}
+ /> 
 
       <h1>Snattartiden</h1>
 

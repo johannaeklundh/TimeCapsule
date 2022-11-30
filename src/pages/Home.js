@@ -12,13 +12,14 @@ import Popup from "react-animated-popup";
 import ClosedCapsule from "./AvailableCapsule";
 import { useNavigate } from "react-router-dom";
 
-import Startsida2 from "../Startsida2.png";
 import jord from "../testjord2.png";
 import morkJord from "../morkjord2.png";
 import AspectImage from "../components/AspectImage";
 import Logo from "../Logo.png";
 import MemoryLane from "../memorylane.png";
 import Arrow from "../arrow.png";
+import lower from "../startsida_lower.png";
+import upper from "../startsida_upper.png";
 
 let capsuleStorage = JSON.parse(window.localStorage.getItem("capsules"));
 capsuleStorage = capsuleStorage == null ? [] : capsuleStorage;
@@ -39,7 +40,7 @@ function Home() {
 
   return (
     <div className="container">
-      <AspectImage className="top" src={Startsida2}>
+      <AspectImage className="top" src={upper}>
         <img id="logo" src={Logo} />
         <button id="plus" type="button" onClick={() => setVisible(true)}>
           <img src={CapsulePlus} />
@@ -54,11 +55,7 @@ function Home() {
         visible={visible}
       />
 
-      <AspectImage className="top" src={Startsida2}>
-        <button id="plus" type="button" onClick={() => setVisible(true)}>
-          <img src={CapsulePlus} />
-        </button>
-      </AspectImage>
+      <AspectImage className="top" src={lower}></AspectImage>
 
       <AspectImage className="middle" src={jord}>
         {capsules.map((capsuledata, index) => {
@@ -66,7 +63,7 @@ function Home() {
         })}
       </AspectImage>
 
-      <AspectImage className="bottom" src={morkJord}>
+      <AspectImage className="bottom">
         <h3>Snattartiden</h3>
         <button
           id="open"
