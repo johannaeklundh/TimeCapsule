@@ -136,16 +136,20 @@ body {
 }
 
 #tillbakaKnapp {
-  padding: 2vw;
+  padding: 6px;
+  margin: 8px;
   max-width: 7vw;
   background-color: transparent;
-  border: 1px solid rgb(125, 74, 15);
-  border-radius: 8px;
-  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  border: 1px solid black;
+  border-radius: 10px;
   color: transparent;
-  line-height: 29px;
   vertical-align: middle;
   
+}
+
+#tillbakaKnapp:hover {
+  box-shadow: black 0 2px 5px 0;
+
 }
 
 #brown {
