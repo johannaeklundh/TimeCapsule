@@ -74,7 +74,7 @@ function Home() {
         })}
       </AspectImage>
       
-      <AspectImage className="bottom" src={morkJord}>
+      <AspectImage className="bottom" >
       <h4>
           Tap on a capsule to view the saved photos! 
       </h4>
