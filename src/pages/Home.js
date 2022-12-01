@@ -36,17 +36,29 @@ function Home() {
     setCapsules(newState); // lägger till den nya kaspeln i en array med alla andra
     setVisible(false);
   };
+  
 
   return (
+
     <div className="container">
+
       <AspectImage className="top" src={upper}>
         <img id="logo" src={Logo} />
+
+      <h3>
+        Tap to create a new photocapsule.
+      </h3>
+
         <button id="plus" type="button" onClick={() => setVisible(true)}>
           <img src={CapsulePlus} />
         </button>
         <img id="memorylane" src={MemoryLane} />
         <img id="arrow" src={Arrow} />
       </AspectImage>
+
+      <h3>
+        Tap on a capsule to add photos.
+      </h3>
 
       <CreateNewCapsule
         onCapsule={addCapsule}
@@ -62,6 +74,10 @@ function Home() {
         })}
       </AspectImage>
 
+      <h3>
+          Tap on a capsule to view the saved photos. 
+      </h3>
+      
       <AspectImage className="bottom">
         <h3>Snattartiden</h3>
         <button
@@ -70,6 +86,7 @@ function Home() {
           onClick={() => navigate("/capsule")}
           style={{ cursor: "pointer" }}
         >
+
           <img src={OpenedCapsule} />
         </button>
         <h3>Sommar 2022</h3>
