@@ -73,19 +73,17 @@ function Home() {
 
       <AspectImage className="middle" src={jord}>
       <h4>
-        Tap on a capsule to add photos.
+        Tap on a capsule to add photos
       </h4>
         {capsules.map((capsuledata, index) => {
           return <Capsule data={capsuledata}></Capsule>;
           
         })}
       </AspectImage>
-
-
       
       <AspectImage className="bottom">
       <h4>
-          Tap on a capsule to view the saved photos. 
+          Tap on a capsule to view the saved photos! 
       </h4>
 
         <h3>Snattartiden</h3>
