@@ -44,16 +44,11 @@ function Home() {
 
       <AspectImage className="top" src={upper}>
         <img id="logo" src={Logo} />
-
-      <h4>
-        Tap to create a new photocapsule.
-      </h4>
-
         <button id="plus" type="button" onClick={() => setVisible(true)}>
           <img src={CapsulePlus} />
         </button>
-        <img id="memorylane" src={MemoryLane} />
-        <img id="arrow" src={Arrow} />
+        {/* <img id="memorylane" src={MemoryLane} />
+        <img id="arrow" src={Arrow} /> */}
       </AspectImage>
 
 
@@ -64,24 +59,26 @@ function Home() {
         visible={visible}
       />
 
-      <AspectImage className="top" src={lower}></AspectImage>
+      <AspectImage className="top" src={lower}>
+      <img id="memorylane" src={MemoryLane} />
+        <img id="arrow" src={Arrow} />
+
+      </AspectImage>
 
 
       <AspectImage className="middle" src={jord}>
       <h4>
-        Tap on a capsule to add photos.
+        Tap on a capsule to add photos
       </h4>
         {capsules.map((capsuledata, index) => {
           return <Capsule data={capsuledata}></Capsule>;
           
         })}
       </AspectImage>
-
-
       
       <AspectImage className="bottom">
       <h4>
-          Tap on a capsule to view the saved photos. 
+          Tap on a capsule to view the saved photos! 
       </h4>
 
         <h3>Snattartiden</h3>

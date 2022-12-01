@@ -39,25 +39,21 @@
   }
 }
 
-h1 {
-  margin-left: 25vw;
-}
-
 h4 {
   font-size: 1.3em;
-  color: black;
+  color: #291d0e;
   font-family: futura;
 }
 
 h3 {
   font-size: 1.3em;
-  color: black;
+  color: #291d0e;
   font-family: futura;
 }
 
 p {
   font-size: 1em;
-  color: black;
+  color: #291d0e;
   font-family: futura;
 }
 
@@ -72,6 +68,7 @@ body {
   border: 1px solid black;
   margin: 5vw;
 }
+
 .container {
   background-color: #efc88f;
   display: flex;
@@ -79,11 +76,13 @@ body {
   align-items: center;
   text-align: center;
 }
+
 .capsuleContainer {
   display: flex;
   justify-content: center;
   background-color: black;
 }
+
 .top {
 }
 
@@ -97,8 +96,9 @@ body {
 
 .bottom {
   background-image: url("./morkjord2.png");
+  background-repeat: repeat-y;
+  
 }
-
 
 #plus img {
   width: 200px;
@@ -117,7 +117,8 @@ body {
 
 #closed {
   width: 200px;
-  padding: 5px;
+  padding: 10px;
+  margin-top: 50px;
 }
 
 #plus {
@@ -188,10 +189,10 @@ body {
 }
 
 .popupbutton {
-  background-color: blue;
+  background-color: #efc88f;
   border: none;
   border-radius: 2px;
-  color: white;
+  color: #443018;
   padding: 3px 10px;
   flex-direction: row;
   justify-content: flex-end;
