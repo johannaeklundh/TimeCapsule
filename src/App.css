@@ -44,9 +44,21 @@ h1 {
 }
 
 h4 {
-  font-size: 1.4em;
+  font-size: 1.3em;
   color: black;
-  font-family: Tahoma;
+  font-family: futura;
+}
+
+h3 {
+  font-size: 1.3em;
+  color: black;
+  font-family: futura;
+}
+
+p {
+  font-size: 1em;
+  color: black;
+  font-family: futura;
 }
 
 body {
