@@ -44,8 +44,8 @@ function Home() {
         <button id="plus" type="button" onClick={() => setVisible(true)}>
           <img src={CapsulePlus} />
         </button>
-        <img id="memorylane" src={MemoryLane} />
-        <img id="arrow" src={Arrow} />
+        {/* <img id="memorylane" src={MemoryLane} />
+        <img id="arrow" src={Arrow} /> */}
       </AspectImage>
 
       <CreateNewCapsule
@@ -54,15 +54,21 @@ function Home() {
         visible={visible}
       />
 
-      <AspectImage className="top" src={lower}></AspectImage>
+      <AspectImage className="top" src={lower}>
+      <img id="memorylane" src={MemoryLane} />
+        <img id="arrow" src={Arrow} />
+
+      </AspectImage>
 
       <AspectImage className="middle" src={jord}>
+        <h1>Be patient, beautiful memories await!</h1>
         {capsules.map((capsuledata, index) => {
           return <Capsule data={capsuledata}></Capsule>;
         })}
       </AspectImage>
 
-      <AspectImage className="bottom">
+      <AspectImage className="bottom" src={morkJord}>
+        <h1>Tap to view a Time Capsule!</h1>
         <h3>Snattartiden</h3>
         <button
           id="open"

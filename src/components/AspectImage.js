@@ -6,9 +6,10 @@ const AspectImage = ({ src, children, className }) => {
             position: "relative", 
             width: "100%",
         }}>
-            <img className="bottom" src={src} style={{width: "100%"}}>
+            <img className="top" src={src} style={{width: "100%"}}>
             </img>
             <div style={{
+                position: "absolute",
                 top: 0,
                 left: 0,
                 right: 0,
