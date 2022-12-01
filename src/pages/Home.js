@@ -44,11 +44,6 @@ function Home() {
 
       <AspectImage className="top" src={upper}>
         <img id="logo" src={Logo} />
-
-      <h4>
-        Tap to create a new photocapsule.
-      </h4>
-
         <button id="plus" type="button" onClick={() => setVisible(true)}>
           <img src={CapsulePlus} />
         </button>
