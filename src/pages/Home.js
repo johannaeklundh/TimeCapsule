@@ -36,17 +36,27 @@ function Home() {
     setCapsules(newState); // lägger till den nya kaspeln i en array med alla andra
     setVisible(false);
   };
+  
 
   return (
+
     <div className="container">
+
       <AspectImage className="top" src={upper}>
         <img id="logo" src={Logo} />
+
+      <h4>
+        Tap to create a new photocapsule.
+      </h4>
+
         <button id="plus" type="button" onClick={() => setVisible(true)}>
           <img src={CapsulePlus} />
         </button>
         {/* <img id="memorylane" src={MemoryLane} />
         <img id="arrow" src={Arrow} /> */}
       </AspectImage>
+
+
 
       <CreateNewCapsule
         onCapsule={addCapsule}
@@ -60,15 +70,24 @@ function Home() {
 
       </AspectImage>
 
+
       <AspectImage className="middle" src={jord}>
-        <h1>Be patient, beautiful memories await!</h1>
+      <h4>
+        Tap on a capsule to add photos.
+      </h4>
         {capsules.map((capsuledata, index) => {
           return <Capsule data={capsuledata}></Capsule>;
+          
         })}
       </AspectImage>
 
-      <AspectImage className="bottom" src={morkJord}>
-        <h1>Tap to view a Time Capsule!</h1>
+
+      
+      <AspectImage className="bottom">
+      <h4>
+          Tap on a capsule to view the saved photos. 
+      </h4>
+
         <h3>Snattartiden</h3>
         <button
           id="open"
@@ -76,6 +95,7 @@ function Home() {
           onClick={() => navigate("/capsule")}
           style={{ cursor: "pointer" }}
         >
+
           <img src={OpenedCapsule} />
         </button>
         <h3>Sommar 2022</h3>
