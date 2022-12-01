@@ -39,30 +39,34 @@
   }
 }
 
-h4 {
-  font-size: 1.3em;
-  color: #291d0e;
+h1 {  /*Titel i "available capsule"-sidan*/
+
+}
+
+h2 { /*Titlar för alla kapslar*/
+  font-size: 20px;
+  color: #150e05;
   font-family: Tahoma;
 }
 
-h3 {
-  font-size: 1.3em;
+h3 { /*ljus text*/
+  font-size: 14px;
+  color: #efc88f;
+  font-family: Tahoma;
+}
+
+h4 { /*Titel: förklarande text*/
+  font-size: 15px;
   color: #291d0e;
   font-family: Tahoma;
 }
 
 p {
-  font-size: 1em;
+  font-size: 15px;
   color: #291d0e;
   font-family: Tahoma;
-  margin-bottom: 5px;
 }
 
-h2 {
-  font-size: 25px;
-  color: #150e05;
-  font-family: Tahoma;
-}
 
 body {
 }

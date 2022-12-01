@@ -16,6 +16,7 @@ const UploadPhoto = ({ data, onDone }) => {
   return (
     <div className="addphotos">
       <h2>{data.name}</h2>
+      <h3>Add photos to Time Capsule:</h3>
       <ImageUploading
         multiple
         value={images}
