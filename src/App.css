@@ -71,14 +71,7 @@ body {
 
 .middle {
 }
-
-.component {
-  font-family: Tahoma;
-  color:lightgoldenrodyellow;
-}
-
 .bottom {
-  background-image: url("./morkjord2.png");
 }
 
 #plus img {
@@ -91,8 +84,8 @@ body {
 
 #logo {
   margin-top: 150px;
-  width: 60%;
-  padding: 5px;
+  width: 80%;
+  padding: 50px;
 }
 
 #closed {
@@ -105,25 +98,17 @@ body {
   background-color: transparent;
   border: none;
   box-sizing: content-box;
-  margin-top: 10px;
-}
-
-.img CapsulePlus {
-  width: 40px;
+  margin-top: 50px;
 }
 
 #memorylane {
-  padding-left: 60px;
-  padding-right: 60px;
-  margin-top: 25px;
-  width: 200px;
+  margin-top: 60px;
+  width: 300px;
 }
 
 #arrow {
-  height: 60px;
-  margin-top: 10px;
-  padding-left: 60px;
-  padding-right: 60px;
+  margin-top: 30px;
+  height: 100px;
 }
 
 #open {
@@ -167,30 +152,12 @@ body {
   padding: 15px;
 }
 
-.popupbutton {
-  background-color: blue;
-  border: none;
-  border-radius: 2px;
-  color: white;
-  padding: 3px 10px;
-  flex-direction: row;
-  justify-content: flex-end;
-  margin: 6px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 10px;
+#tillbakaKnapp {
+  padding: 2vw;
+  max-width: 7vw;
 }
 
-#plus:hover {
-  transform: scale(
-    1.1
-  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+#brown {
+  height: 100vh;
+  background-color: rgb(103, 80, 66);
 }
-
-/*
-input [type=text] {
-  border-radius: 5px;
-  padding: 5px 10px; 
-}
-*/
