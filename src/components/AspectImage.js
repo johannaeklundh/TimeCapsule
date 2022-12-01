@@ -3,7 +3,7 @@
 const AspectImage = ({ src, children, className }) => {
     return (
         <div className={className} style={{
-            position: "relative",
+            position: "relative", 
             width: "100%",
         }}>
             <img className="bottom" src={src} style={{width: "100%"}}>

@@ -82,26 +82,21 @@ body {
 }
 
 #plus img {
-  width: 100%;
-
-}
-
-#open img {
-  width: 100%;
-  background-color: transparent;
-}
-
-#plus img {
   width: 200px;
 }
 
 #open img {
-  width: 375px;
+  width: 200px;
 }
 
 #logo {
   margin-top: 150px;
   width: 60%;
+  padding: 5px;
+}
+
+#closed {
+  width: 200px;;
   padding: 5px;
 }
 
