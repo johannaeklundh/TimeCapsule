@@ -51,8 +51,6 @@ function Home() {
         <img id="arrow" src={Arrow} /> */}
       </AspectImage>
 
-
-
       <CreateNewCapsule
         onCapsule={addCapsule}
         onCanceled={() => setVisible(false)}
@@ -65,10 +63,9 @@ function Home() {
 
       </AspectImage>
 
-
       <AspectImage className="middle" src={jord}>
       <h4>
-        Tap on a capsule to add photos
+        Tap on a capsule to add photos.
       </h4>
         {capsules.map((capsuledata, index) => {
           return <Capsule data={capsuledata}></Capsule>;
@@ -78,7 +75,7 @@ function Home() {
       
       <AspectImage className="bottom">
       <h4>
-          Tap on a capsule to view the saved photos! 
+          Tap on a capsule to view your saved photos. 
       </h4>
 
         <h3>Snattartiden</h3>

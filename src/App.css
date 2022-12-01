@@ -40,7 +40,19 @@
 }
 
 h4 {
-  font-size: 14px;
+  font-size: 1.3em;
+  color: #291d0e;
+  font-family: Tahoma;
+}
+
+h3 {
+  font-size: 1.3em;
+  color: #291d0e;
+  font-family: Tahoma;
+}
+
+p {
+  font-size: 1em;
   color: #291d0e;
   font-family: Tahoma;
   margin-bottom: 5px;
