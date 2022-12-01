@@ -43,6 +43,13 @@ h4 {
   font-size: 14px;
   color: #291d0e;
   font-family: Tahoma;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-size: 25px;
+  color: #150e05;
+  font-family: Tahoma;
 }
 
 body {
@@ -93,7 +100,7 @@ body {
 }
 
 #open img {
-  width: 200px;
+  width: 150px;
   background-color: transparent;
 }
 
@@ -104,9 +111,8 @@ body {
 }
 
 #closed {
-  width: 200px;
+  width: 150px;
   padding: 10px;
-  margin-top: 50px;
 }
 
 #plus {
@@ -114,7 +120,7 @@ body {
   background-color: transparent;
   border: none;
   box-sizing: content-box;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .img CapsulePlus {
@@ -182,13 +188,31 @@ body {
   border-radius: 2px;
   color: #443018;
   padding: 3px 10px;
-  flex-direction: row;
-  justify-content: flex-end;
   margin: 6px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 10px;
+  font-size: 14px;
+}
+
+.minibutton {
+  font-size: 12px;
+  color: #efc88f;
+  background-color: #2b1e0f;
+  border: none;
+  text-align: center;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.addphotos {
+  background-color: #443018;
+  font-family: Tahoma;
+  padding: 10px;
+}
+
+.addphoto_text {
+  color: #efc88f;
+  font-size: 35px;
 }
 
 #plus:hover {

@@ -14,8 +14,8 @@ const UploadPhoto = ({ data, onDone }) => {
   };
 
   return (
-    <p>
-      {data.name}
+    <div className="addphotos">
+      <h2>{data.name}</h2>
       <ImageUploading
         multiple
         value={images}
@@ -32,8 +32,8 @@ const UploadPhoto = ({ data, onDone }) => {
           dragProps,
         }) => (
           // write your building UI
-          <div className="upload__image-wrapper">
-            <p
+          <div>
+            <p className="addphoto_text"
               style={isDragging ? { color: "red" } : undefined}
               onClick={onImageUpload}
               {...dragProps}
@@ -49,12 +49,12 @@ const UploadPhoto = ({ data, onDone }) => {
                 </div>
               </div>
             ))}
-            <button onClick={onImageRemoveAll}> Remove all</button>
+            <button class="minibutton" onClick={onImageRemoveAll}> Remove all</button>
           </div>
         )}
       </ImageUploading>
-      <button onClick={onDone}> Done</button>
-    </p>
+      <button class="popupbutton" onClick={onDone}> Done</button>
+    </div>
   );
 };
 export default UploadPhoto;
