@@ -243,3 +243,19 @@ input [type=text] {
   padding: 5px 10px; 
 }
 */
+
+.mellanJord{
+  
+  background-size: cover;
+  min-height: 500px;
+  
+  
+}
+
+.bottenJord {
+  
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+  
+}

@@ -42,6 +42,8 @@ function Home() {
 
     <div className="container">
 
+    
+
       <AspectImage className="top" src={upper}>
         <img id="logo" src={Logo} />
         <button id="plus" type="button" onClick={() => setVisible(true)}>
@@ -51,11 +53,15 @@ function Home() {
         <img id="arrow" src={Arrow} /> */}
       </AspectImage>
 
+    
+
       <CreateNewCapsule
         onCapsule={addCapsule}
         onCanceled={() => setVisible(false)}
         visible={visible}
       />
+
+        
 
       <AspectImage className="top" src={lower}>
       <img id="memorylane" src={MemoryLane} />
@@ -63,8 +69,9 @@ function Home() {
 
       </AspectImage>
 
+  
+      <div className="mellanJord" style={{backgroundImage: "url(/testjord2.png)"}}>
 
-      <AspectImage className="middle" src={jord}>
       <h4>
         Tap on a capsule to add photos
       </h4>
@@ -72,9 +79,10 @@ function Home() {
           return <Capsule data={capsuledata}></Capsule>;
           
         })}
-      </AspectImage>
-      
-      <AspectImage className="bottom" >
+
+        </div>
+       
+      <div className="bottenJord" style={{backgroundImage: "url(/morkjord2.png)"}}>
       <h4>
           Tap on a capsule to view the saved photos! 
       </h4>
@@ -107,7 +115,9 @@ function Home() {
         >
           <img src={OpenedCapsule} />
         </button>
-      </AspectImage>
+        </div>
+ 
+    
     </div>
   );
 }
