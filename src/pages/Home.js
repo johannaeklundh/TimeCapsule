@@ -64,9 +64,9 @@ function Home() {
 
       <div className="mellanJord" style={{backgroundImage: "url(/testjord2.png)"}}>
 
-      <h4>
+      <h5>
         Tap on a capsule to add photos.
-      </h4>
+      </h5>
         {capsules.map((capsuledata, index) => {
           return <Capsule data={capsuledata}></Capsule>;
           

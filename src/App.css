@@ -5,14 +5,14 @@ h1 {
 
 h2 {
   /*Titlar för alla kapslar*/
-  font-size: 20px;
-  color: #150e05;
+  font-size: 25px;
+  color: white;
   font-family: Tahoma;
 }
 
 h3 {
   /*ljus text*/
-  font-size: 14px;
+  font-size: 16px;
   color: #efc88f;
   font-family: Tahoma;
 }
@@ -20,7 +20,13 @@ h3 {
 h4 {
   /*Titel: förklarande text*/
   font-size: 15px;
-  color: #291d0e;
+  color: #0c0a07;
+  font-family: Tahoma;
+}
+
+h5 {
+  font-size: 15px;
+  color: #332412;
   font-family: Tahoma;
 }
 
@@ -89,7 +95,6 @@ body {
 
 #closed {
   width: 150px;
-  padding: 10px;
 }
 
 #plus {
@@ -121,7 +126,7 @@ body {
 #open {
   background-color: transparent;
   border: none;
-  padding: 5vw;
+  padding-bottom: 5vw;
   box-sizing: content-box;
 }
 
@@ -209,6 +214,11 @@ input {
   padding: 3px 8px; 
 }
 
+.timer {
+  padding-bottom: 2vw;
+  color:#291d0e;
+
+}
 
 .mellanJord {
   background-size: cover;
