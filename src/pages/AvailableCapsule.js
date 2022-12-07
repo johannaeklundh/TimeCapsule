@@ -1,7 +1,7 @@
 import App from "../App";
 import React from "react";
 import SlideShow from "../components/SlideShow";
-import pil from "../pilTillbaka.png";
+import pil from "../tillbakaknapp.png";
 import { useNavigate } from "react-router-dom";
 
 const AvailableCapsule = (props) => {
@@ -10,9 +10,7 @@ const AvailableCapsule = (props) => {
   return (
     <div className="component" id="brown">
       {/* CSSen för denna bild ligger i app.ss */}
-
-        <img src={pil} id="tillbakaKnapp" onClick={() => navigate("/")}
- /> 
+        <img src={pil} id="tillbakaKnapp" onClick={() => navigate("/")}/>
 
       <h1>Snattartiden</h1>
 

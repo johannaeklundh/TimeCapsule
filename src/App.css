@@ -135,10 +135,6 @@ body {
   padding: 6px;
   margin: 8px;
   max-width: 7vw;
-  background-color: transparent;
-  border: 1px solid black;
-  border-radius: 10px;
-  color: transparent;
   vertical-align: middle;
 }
 
