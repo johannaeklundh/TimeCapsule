@@ -39,23 +39,26 @@
   }
 }
 
-h1 {  /*Titel i "available capsule"-sidan*/
-
+h1 {
+  /*Titel i "available capsule"-sidan*/
 }
 
-h2 { /*Titlar för alla kapslar*/
+h2 {
+  /*Titlar för alla kapslar*/
   font-size: 20px;
   color: #150e05;
   font-family: Tahoma;
 }
 
-h3 { /*ljus text*/
+h3 {
+  /*ljus text*/
   font-size: 14px;
   color: #efc88f;
   font-family: Tahoma;
 }
 
-h4 { /*Titel: förklarande text*/
+h4 {
+  /*Titel: förklarande text*/
   font-size: 15px;
   color: #291d0e;
   font-family: Tahoma;
@@ -66,7 +69,6 @@ p {
   color: #291d0e;
   font-family: Tahoma;
 }
-
 
 body {
 }
@@ -102,13 +104,12 @@ body {
 
 .component {
   font-family: Tahoma;
-  color:lightgoldenrodyellow;
+  color: lightgoldenrodyellow;
 }
 
 .bottom {
   background-image: url("./morkjord2.png");
   background-repeat: repeat-y;
-  
 }
 
 #plus img {
@@ -183,6 +184,7 @@ body {
   height: 100vh;
   background-color: #443018;
 }
+
 .image-item {
   display: flex;
   flex-direction: row;
@@ -244,17 +246,13 @@ input [type=text] {
 }
 */
 
-.mellanJord{
-  
+.mellanJord {
   background-size: cover;
   min-height: 500px;
   width: 900px;
-  
-  
 }
 
 .bottenJord {
-  
   background-position: center;
   background-size: cover;
   min-height: 500px;
