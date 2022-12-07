@@ -67,7 +67,6 @@ p {
   font-family: Tahoma;
 }
 
-
 body {
 }
 
@@ -100,19 +99,22 @@ body {
 .middle {
 }
 
-.component {
-  font-family: Tahoma;
-  color:lightgoldenrodyellow;
-}
-
 .bottom {
   background-image: url("./morkjord2.png");
   background-repeat: repeat-y;
   
 }
 
-#plus img {
-  width: 200px;
+.component {
+  font-family: Tahoma;
+  color:lightgoldenrodyellow;
+}
+
+#open {
+  background-color: transparent;
+  border: none;
+  padding: 5vw;
+  box-sizing: content-box;
 }
 
 #open img {
@@ -139,8 +141,14 @@ body {
   margin-top: 30px;
 }
 
-.img CapsulePlus {
-  width: 40px;
+#plus img {
+  width: 200px;
+}
+
+#plus:hover {
+  transform: scale(
+    1.1
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 #memorylane {
@@ -155,13 +163,6 @@ body {
   margin-top: 10px;
   padding-left: 60px;
   padding-right: 60px;
-}
-
-#open {
-  background-color: transparent;
-  border: none;
-  padding: 5vw;
-  box-sizing: content-box;
 }
 
 #tillbakaKnapp {
@@ -183,60 +184,6 @@ body {
   height: 100vh;
   background-color: #443018;
 }
-.image-item {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.popup {
-  background-color: #443018;
-  color: white;
-  font-family: Tahoma;
-  border-radius: 15px;
-  padding: 15px;
-}
-
-.popupbutton {
-  background-color: #efc88f;
-  border: none;
-  border-radius: 2px;
-  color: #443018;
-  padding: 3px 10px;
-  margin: 6px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.minibutton {
-  font-size: 12px;
-  color: #efc88f;
-  background-color: #2b1e0f;
-  border: none;
-  text-align: center;
-  border-radius: 2px;
-  text-decoration: none;
-}
-
-.addphotos {
-  background-color: #443018;
-  font-family: Tahoma;
-  padding: 10px;
-}
-
-.addphoto_text {
-  color: #efc88f;
-  font-size: 35px;
-}
-
-#plus:hover {
-  transform: scale(
-    1.1
-  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
-}
-
 /*
 input [type=text] {
   border-radius: 5px;
