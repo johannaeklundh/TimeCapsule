@@ -80,7 +80,7 @@ function Home() {
       </h4>
 
       
-
+<div class="button-group">
     
 
         <h3>Snattartiden</h3>
@@ -115,7 +115,7 @@ function Home() {
           <img src={OpenedCapsule} />
           </button>
       
-  
+          </div>
   
         </div>
     </div>
