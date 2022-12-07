@@ -257,5 +257,8 @@ input [type=text] {
   background-position: center;
   background-size: cover;
   min-height: 500px;
-  
+}
+.float-container {
+  border: 3px solid #fff;
+  padding: 20px;
 }
