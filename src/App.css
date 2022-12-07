@@ -1,63 +1,33 @@
-@import "~react-image-gallery/styles/css/image-gallery.css";
 
-.App {
+h1 {
+  /*Titel i "available capsule"-sidan*/
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h2 {
+  /*Titlar för alla kapslar*/
+  font-size: 25px;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-h1 {  /*Titel i "available capsule"-sidan*/
-
-}
-
-h2 { /*Titlar för alla kapslar*/
-  font-size: 20px;
-  color: #150e05;
   font-family: Tahoma;
 }
 
-h3 { /*ljus text*/
-  font-size: 14px;
+h3 {
+  /*ljus text*/
+  font-size: 16px;
   color: #efc88f;
   font-family: Tahoma;
 }
 
-h4 { /*Titel: förklarande text*/
+h4 {
+  /*Titel: förklarande text*/
   font-size: 15px;
-  color: #291d0e;
+  color: #0c0a07;
+  font-family: Tahoma;
+}
+
+h5 {
+  font-size: 15px;
+  color: #332412;
   font-family: Tahoma;
 }
 
@@ -99,10 +69,14 @@ body {
 .middle {
 }
 
+.component {
+  font-family: Tahoma;
+  color: lightgoldenrodyellow;
+}
+
 .bottom {
   background-image: url("./morkjord2.png");
   background-repeat: repeat-y;
-  
 }
 
 .component {
@@ -123,14 +97,13 @@ body {
 }
 
 #logo {
-  margin-top: 150px;
+  margin-top: 125px;
   width: 60%;
   padding: 5px;
 }
 
 #closed {
   width: 150px;
-  padding: 10px;
 }
 
 #plus {
@@ -165,6 +138,13 @@ body {
   padding-right: 60px;
 }
 
+#open {
+  background-color: transparent;
+  border: none;
+  padding-bottom: 5vw;
+  box-sizing: content-box;
+}
+
 #tillbakaKnapp {
   padding: 6px;
   margin: 8px;
@@ -184,9 +164,98 @@ body {
   height: 100vh;
   background-color: #443018;
 }
-/*
-input [type=text] {
-  border-radius: 5px;
-  padding: 5px 10px; 
+
+.image-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
-*/
+
+.popup {
+  background-color: #443018;
+  color: white;
+  font-family: Tahoma;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.ptext {
+  color:white;
+}
+
+.popupbutton {
+  background-color: #efc88f;
+  border: none;
+  border-radius: 2px;
+  color: #443018;
+  padding: 3px 12px;
+  margin: 6px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.minibutton {
+  font-size: 12px;
+  color: #efc88f;
+  background-color: #2b1e0f;
+  border: none;
+  text-align: center;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+.addphotos {
+  background-color: #443018;
+  font-family: Tahoma;
+  padding: 10px;
+}
+
+.addphoto_text {
+  color: #efc88f;
+  font-size: 35px;
+}
+
+#plus:hover {
+  transform: scale(
+    1.1
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+
+input {
+  border-radius: 5px;
+  padding: 3px 8px; 
+}
+
+.timer {
+  padding-bottom: 2vw;
+  color:#291d0e;
+
+}
+
+.mellanJord {
+  background-size: cover;
+  min-height: 500px;
+  width: 375px;
+  
+  
+}
+
+.bottenJord {
+  background-position: center;
+  background-size: cover;
+  min-height: 500px;
+  width: 375px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+

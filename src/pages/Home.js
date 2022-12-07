@@ -40,8 +40,7 @@ function Home() {
 
   return (
 
-    <div className="container">
-
+  <div className="container">
       <AspectImage className="top" src={upper}>
         <img id="logo" src={Logo} />
         <button id="plus" type="button" onClick={() => setVisible(true)}>
@@ -61,52 +60,62 @@ function Home() {
 
       </AspectImage>
 
+      <div className="mellanJord" style={{backgroundImage: "url(/testjord2.png)"}}>
 
-      <AspectImage className="middle" src={jord}>
-      <h4>
-        Tap on a capsule to add photos
-      </h4>
+      <h5>
+        Tap on a capsule to add photos.
+      </h5>
         {capsules.map((capsuledata, index) => {
           return <Capsule data={capsuledata}></Capsule>;
           
         })}
-      </AspectImage>
-      
-      <AspectImage className="bottom">
+
+        </div>
+       
+      <div className="bottenJord" style={{backgroundImage: "url(/morkjord2.png)"}}>
       <h4>
-          Tap on a capsule to view the saved photos! 
+          Tap on a capsule to view your saved photos. 
       </h4>
 
-        <h2>Snattartiden</h2>
+      
+    <div class="button-group">
+ 
         <button
           id="open"
           type="button"
           onClick={() => navigate("/capsule")}
           style={{ cursor: "pointer" }}
         >
+        <h3>Snattartiden</h3>
+        <img src={OpenedCapsule} />
+        </button>
 
-          <img src={OpenedCapsule} />
-        </button>
-        <h2>Sommar 2022</h2>
         <button
           id="open"
           type="button"
           onClick={() => navigate("/capsule")}
           style={{ cursor: "pointer" }}
         >
-          <img src={OpenedCapsule} />
+        <h3>Sommar 2022</h3>
+        <img src={OpenedCapsule} />
         </button>
-        <h2>Vinter 2021</h2>
-        <button
-          id="open"
-          type="button"
-          onClick={() => navigate("/capsule")}
-          style={{ cursor: "pointer" }}
-        >
-          <img src={OpenedCapsule} />
-        </button>
-      </AspectImage>
+
     </div>
+
+        <button
+          id="open"
+          type="button"
+          onClick={() => navigate("/capsule")}
+          style={{ cursor: "pointer" }}
+        >
+          <h3>Vinter 2021</h3>
+          <img src={OpenedCapsule} />
+          </button>
+
+  
+    </div>
+  </div>
+    
   );
 }
 

@@ -38,13 +38,14 @@ const CreateNewCapsule = ({ onCapsule, onCanceled, visible }) => {
           name="Memoryname"
           onChange={capsuleNameHandler}
         ></input>
-        <p>Select start date:</p>
+        <p className="ptext">Select start date:</p>
         <DatePicker
+          id="Memoryname"
           selected={startDate}
           onChange={(date) => setStartDate(date)}
         />
-        <p>Select end date:</p>
-        <DatePicker selected={endDate} onChange={(date) => setEndDate(date)} />
+        <p className="ptext">Select end date:</p>
+        <DatePicker id="Memoryname" selected={endDate} onChange={(date) => setEndDate(date)} />
         <br></br>
       </form>
       <button type="button" class="popupbutton" onClick={onCanceled}>
