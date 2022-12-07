@@ -254,7 +254,11 @@ input {
 }
 
 .info {
-  background-color: #efc88f;
   font-family: Tahoma;
   padding: 5vw;
+  padding-top: 0vh;
+}
+
+#howH1 {
+  padding-top: 25vh;
 }
