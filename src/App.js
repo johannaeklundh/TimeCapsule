@@ -1,7 +1,7 @@
 import Home from "./pages/Home";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import AvailableCapsule from "./pages/AvailableCapsule";
-import SlideShow from "./components/SlideShow";
+import Info from "./pages/Info";
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/capsule" element={<AvailableCapsule />} />
+          <Route path="/info" element={<Info />} />
         </Routes>
       </div>
     </Router>

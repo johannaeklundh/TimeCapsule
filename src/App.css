@@ -1,4 +1,3 @@
-
 h1 {
   /*Titel i "available capsule"-sidan*/
   text-align: center;
@@ -81,7 +80,7 @@ body {
 
 .component {
   font-family: Tahoma;
-  color:lightgoldenrodyellow;
+  color: lightgoldenrodyellow;
 }
 
 #open {
@@ -177,7 +176,7 @@ body {
 }
 
 .ptext {
-  color:white;
+  color: white;
 }
 
 .popupbutton {
@@ -219,24 +218,20 @@ body {
   ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
-
 input {
   border-radius: 5px;
-  padding: 3px 8px; 
+  padding: 3px 8px;
 }
 
 .timer {
   padding-bottom: 2vw;
-  color:#291d0e;
-
+  color: #291d0e;
 }
 
 .mellanJord {
   background-size: cover;
   min-height: 500px;
   width: 375px;
-  
-  
 }
 
 .bottenJord {
@@ -250,8 +245,9 @@ input {
   display: flex;
   justify-content: center;
 }
-
-
-
-
-
+#how {
+  position: relative;
+  top: 2px;
+  right: -45%;
+  width: 10%;
+}
