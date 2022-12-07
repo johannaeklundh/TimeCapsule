@@ -226,9 +226,11 @@ input {
 }
 
 .button-group {
-  display: inline-flex;
-  
+  display: flex;
+  justify-content: center;
 }
+
+
 
 
 
