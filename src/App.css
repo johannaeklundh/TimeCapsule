@@ -1,6 +1,7 @@
 
 h1 {
   /*Titel i "available capsule"-sidan*/
+  text-align: center;
 }
 
 h2 {
@@ -234,3 +235,13 @@ input {
   min-height: 500px;
   width: 375px;
 }
+
+.button-group {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+

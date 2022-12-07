@@ -40,7 +40,7 @@ function Home() {
 
   return (
 
-    <div className="container">
+  <div className="container">
       <AspectImage className="top" src={upper}>
         <img id="logo" src={Logo} />
         <button id="plus" type="button" onClick={() => setVisible(true)}>
@@ -79,39 +79,44 @@ function Home() {
           Tap on a capsule to view your saved photos. 
       </h4>
 
-        <h3>Snattartiden</h3>
-        <button
-          id="open"
-          type="button"
-          onClick={() => navigate("/capsule")}
-          style={{ cursor: "pointer" }}
-        >
-         
-
-          <img src={OpenedCapsule} />
-        </button>
-        <h3>Sommar 2022</h3>
-        <button
-          id="open"
-          type="button"
-          onClick={() => navigate("/capsule")}
-          style={{ cursor: "pointer" }}
-        >
-          <img src={OpenedCapsule} />
-        </button>
-        <h3>Vinter 2021</h3>
-        <button
-          id="open"
-          type="button"
-          onClick={() => navigate("/capsule")}
-          style={{ cursor: "pointer" }}
-        >
-          <img src={OpenedCapsule} />
-        </button>
-        </div>
+      
+    <div class="button-group">
  
-    
+        <button
+          id="open"
+          type="button"
+          onClick={() => navigate("/capsule")}
+          style={{ cursor: "pointer" }}
+        >
+        <h3>Snattartiden</h3>
+        <img src={OpenedCapsule} />
+        </button>
+
+        <button
+          id="open"
+          type="button"
+          onClick={() => navigate("/capsule")}
+          style={{ cursor: "pointer" }}
+        >
+        <h3>Sommar 2022</h3>
+        <img src={OpenedCapsule} />
+        </button>
+
     </div>
+
+        <button
+          id="open"
+          type="button"
+          onClick={() => navigate("/capsule")}
+          style={{ cursor: "pointer" }}
+        >
+          <h3>Vinter 2021</h3>
+          <img src={OpenedCapsule} />
+          </button>
+
+  
+    </div>
+  </div>
     
   );
 }
