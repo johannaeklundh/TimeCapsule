@@ -3,17 +3,13 @@ import "../App.css";
 import { useState } from "react";
 
 import Capsule from "../components/Capsule";
-import UploadPhoto from "../components/UploadPhoto";
 import "react-datepicker/dist/react-datepicker.css";
 import CapsulePlus from "../CapsulePlus.png"; // with import
 import OpenedCapsule from "../openedCapsule.png"; // tillgång att se bilderna
 import CreateNewCapsule from "../components//CreateNewCapsule";
-import Popup from "react-animated-popup";
 import { useNavigate } from "react-router-dom";
-
-import jord from "../testjord2.png";
-import morkJord from "../morkjord2.png";
 import AspectImage from "../components/AspectImage";
+
 import Logo from "../Logo.png";
 import MemoryLane from "../memorylane.png";
 import Arrow from "../arrow.png";

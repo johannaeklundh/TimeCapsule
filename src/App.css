@@ -37,6 +37,7 @@ p {
 }
 
 body {
+  background-color: #efc88f;
 }
 
 .capsule {
@@ -250,4 +251,10 @@ input {
   top: 2px;
   right: -45%;
   width: 10%;
+}
+
+.info {
+  background-color: #efc88f;
+  font-family: Tahoma;
+  padding: 5vw;
 }
