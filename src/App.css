@@ -224,3 +224,11 @@ input {
   min-height: 500px;
   width: 375px;
 }
+
+.button-group {
+  display:inline-flex;
+  ;
+}
+
+
+

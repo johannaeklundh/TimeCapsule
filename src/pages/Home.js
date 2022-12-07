@@ -79,6 +79,10 @@ function Home() {
           Tap on a capsule to view your saved photos. 
       </h4>
 
+      
+
+    
+
         <h3>Snattartiden</h3>
         <button
           id="open"
@@ -90,6 +94,7 @@ function Home() {
 
           <img src={OpenedCapsule} />
         </button>
+
         <h3>Sommar 2022</h3>
         <button
           id="open"
@@ -99,6 +104,7 @@ function Home() {
         >
           <img src={OpenedCapsule} />
         </button>
+       
         <h3>Vinter 2021</h3>
         <button
           id="open"
@@ -107,10 +113,11 @@ function Home() {
           style={{ cursor: "pointer" }}
         >
           <img src={OpenedCapsule} />
-        </button>
+          </button>
+      
+  
+  
         </div>
- 
-    
     </div>
     
   );
