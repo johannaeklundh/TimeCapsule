@@ -96,9 +96,7 @@ function Home() {
           onClick={() => navigate("/capsule")}
           style={{ cursor: "pointer" }}
         >
-          <div class="float-container">
-            
-          </div>
+         
 
           <img src={OpenedCapsule} />
         </button>

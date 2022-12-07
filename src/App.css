@@ -248,6 +248,7 @@ input [type=text] {
   
   background-size: cover;
   min-height: 500px;
+  width: 900px;
   
   
 }
@@ -257,8 +258,5 @@ input [type=text] {
   background-position: center;
   background-size: cover;
   min-height: 500px;
-}
-.float-container {
-  border: 3px solid #fff;
-  padding: 20px;
+  width: 900px;
 }
