@@ -63,33 +63,39 @@ function Home() {
 
       </AspectImage>
 
-
       <AspectImage className="middle" src={jord}>
       <h4>
-        Tap on a capsule to add photos
+        Tap on a capsule to add photos.
       </h4>
         {capsules.map((capsuledata, index) => {
           return <Capsule data={capsuledata}></Capsule>;
           
         })}
       </AspectImage>
+
       
-      <AspectImage className="bottom" >
+      
+      <AspectImage className="bottom">
       <h4>
-          Tap on a capsule to view the saved photos! 
+          Tap on a capsule to view your saved photos. 
       </h4>
 
-        <h2>Snattartiden</h2>
+      
+
+        <h3>Snattartiden</h3>
         <button
           id="open"
           type="button"
           onClick={() => navigate("/capsule")}
           style={{ cursor: "pointer" }}
         >
+          <div class="float-container">
+            
+          </div>
 
           <img src={OpenedCapsule} />
         </button>
-        <h2>Sommar 2022</h2>
+        <h3>Sommar 2022</h3>
         <button
           id="open"
           type="button"
@@ -98,7 +104,7 @@ function Home() {
         >
           <img src={OpenedCapsule} />
         </button>
-        <h2>Vinter 2021</h2>
+        <h3>Vinter 2021</h3>
         <button
           id="open"
           type="button"
@@ -108,7 +114,9 @@ function Home() {
           <img src={OpenedCapsule} />
         </button>
       </AspectImage>
+      
     </div>
+    
   );
 }
 
