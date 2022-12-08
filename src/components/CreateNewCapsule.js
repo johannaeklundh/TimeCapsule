@@ -26,8 +26,9 @@ const CreateNewCapsule = ({
     } else if (days <= 0) {
       setErrDateVisible(true);
       return;
-    } else {
+    } else if (textInput === "") {
       setErrNameVisible(true);
+      return;
     }
 
     setDoneVisible(true);
