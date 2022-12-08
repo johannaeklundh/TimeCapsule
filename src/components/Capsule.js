@@ -5,8 +5,7 @@ import UploadPhoto from "./UploadPhoto";
 import TimeLeft from "./Timeleft";
 
 const Capsule = ({ data }) => {
-  const [type, setType] = React.useState("edit");
-  const [visible, setVisible] = useState(false);
+  const [type, setType] = useState("edit");
 
   switch (type) {
     case "upload":

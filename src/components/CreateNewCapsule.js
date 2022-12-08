@@ -3,18 +3,17 @@ import { useState } from "react";
 import DatePicker from "react-datepicker";
 
 const CreateNewCapsule = ({ onCapsule, onCanceled, visible }) => {
-  const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
   const [textInput, setTextInput] = useState("");
 
   const createCapsule = () => {
     if (textInput === "") return;
+    const current = new Date();
     const days =
-      (endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24);
+      (endDate.getTime() - current.getTime()) / (1000 * 60 * 60 * 24);
     if (days <= 0) return;
     const newCapsule = {
       name: textInput,
-      startDate: startDate.toISOString(),
       endDate: endDate.toISOString(),
     }; //skapar ny kapsel med namnet testInput
     onCapsule(newCapsule);
@@ -38,14 +37,13 @@ const CreateNewCapsule = ({ onCapsule, onCanceled, visible }) => {
           name="Memoryname"
           onChange={capsuleNameHandler}
         ></input>
-        <p className="ptext">Select start date:</p>
+        <p className="ptext">Your start date is today: </p>
+        <p className="ptext">Select end date:</p>
         <DatePicker
           id="Memoryname"
-          selected={startDate}
-          onChange={(date) => setStartDate(date)}
+          selected={endDate}
+          onChange={(date) => setEndDate(date)}
         />
-        <p className="ptext">Select end date:</p>
-        <DatePicker id="Memoryname" selected={endDate} onChange={(date) => setEndDate(date)} />
         <br></br>
       </form>
       <button type="button" class="popupbutton" onClick={onCanceled}>
