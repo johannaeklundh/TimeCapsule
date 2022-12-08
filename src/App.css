@@ -12,21 +12,22 @@ h2 {
 
 h3 {
   /*ljus text*/
-  font-size: 16px;
+  font-size: 18px;
   color: #efc88f;
   font-family: Tahoma;
+  font-weight: normal;
 }
 
 h4 {
   /*Titel: förklarande text*/
-  font-size: 15px;
-  color: #0c0a07;
+  font-size: 18px;
+  color: #efc88f;
   font-family: Tahoma;
 }
 
 h5 {
-  font-size: 15px;
-  color: #332412;
+  font-size: 18px;
+  color: #efc88f;
   font-family: Tahoma;
 }
 
