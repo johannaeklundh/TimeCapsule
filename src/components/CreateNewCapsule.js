@@ -9,23 +9,27 @@ const CreateNewCapsule = ({
   setErrNameVisible,
   setErrDateVisible,
   setDoneVisible,
+  setErrVisible,
   visible,
 }) => {
   const [endDate, setEndDate] = useState(new Date());
   const [textInput, setTextInput] = useState("");
 
   const createCapsule = () => {
-    if (textInput === "") {
-      setErrNameVisible(true);
-      return;
-    }
     const current = new Date();
     const days =
       (endDate.getTime() - current.getTime()) / (1000 * 60 * 60 * 24);
-    if (days <= 0) {
+
+    if (textInput === "" && days <= 0) {
+      setErrVisible(true);
+      return;
+    } else if (days <= 0) {
       setErrDateVisible(true);
       return;
+    } else {
+      setErrNameVisible(true);
     }
+
     setDoneVisible(true);
     const newCapsule = {
       name: textInput,

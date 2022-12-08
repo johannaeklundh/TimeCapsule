@@ -28,6 +28,7 @@ function Home() {
   const [errNameVisible, setErrNameVisible] = useState(false);
   const [errDateVisible, setErrDateVisible] = useState(false);
   const [doneVisible, setDoneVisible] = useState(false);
+  const [ErrVisible, setErrVisible] = useState(false);
 
   const addCapsule = (newCapsule) => {
     console.log(newCapsule);
@@ -52,6 +53,7 @@ function Home() {
         setErrNameVisible={setErrNameVisible}
         setErrDateVisible={setErrDateVisible}
         setDoneVisible={setDoneVisible}
+        setErrVisible={setErrVisible}
         visible={visible}
       />
       <Popup visible={errNameVisible} onClose={() => setErrNameVisible(false)}>
@@ -87,6 +89,19 @@ function Home() {
           type="button"
           class="popupbutton"
           onClick={() => setDoneVisible(false)}
+        >
+          Cancel
+        </button>
+      </Popup>
+      <Popup visible={ErrVisible} onClose={() => setErrVisible(false)}>
+        <p>
+          <b>Error!</b> <br></br>Write a name for the memory and select a end
+          date which is after today!
+        </p>
+        <button
+          type="button"
+          class="popupbutton"
+          onClick={() => setErrVisible(false)}
         >
           Cancel
         </button>
