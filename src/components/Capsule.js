@@ -1,11 +1,7 @@
-import { formatDistance } from "date-fns";
 import React, { useEffect } from "react";
 import { useState } from "react";
-import ImageUploading from "react-images-uploading";
 import ClosedCapsule from "../closedcapsule.png";
-
 import UploadPhoto from "./UploadPhoto";
-import Popup from "react-animated-popup";
 import TimeLeft from "./Timeleft";
 
 const Capsule = ({ data }) => {
@@ -25,7 +21,9 @@ const Capsule = ({ data }) => {
         <div onClick={() => setType("upload")}>
           <h3>{data.name}</h3>
           <img id="closed" src={ClosedCapsule} />
-          <p className="timer">Opens in <TimeLeft capsule={data}></TimeLeft></p>
+          <p className="timer">
+            Opens in <TimeLeft capsule={data}></TimeLeft>
+          </p>
         </div>
       );
       break;
