@@ -1,7 +1,7 @@
 import "../App.css";
 import AspectImage from "../components/AspectImage";
 import start from "../Startsida2.png";
-import pil from "../tillbakaknapp.png";
+import pil from "../pilTillbaka.png";
 import { useNavigate } from "react-router-dom";
 
 const Info = (props) => {
