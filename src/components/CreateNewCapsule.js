@@ -1,17 +1,32 @@
 import App from "../App";
 import { useState } from "react";
 import DatePicker from "react-datepicker";
+import Popup from "react-animated-popup";
 
-const CreateNewCapsule = ({ onCapsule, onCanceled, visible }) => {
+const CreateNewCapsule = ({
+  onCapsule,
+  onCanceled,
+  setErrNameVisible,
+  setErrDateVisible,
+  setDoneVisible,
+  visible,
+}) => {
   const [endDate, setEndDate] = useState(new Date());
   const [textInput, setTextInput] = useState("");
 
   const createCapsule = () => {
-    if (textInput === "") return;
+    if (textInput === "") {
+      setErrNameVisible(true);
+      return;
+    }
     const current = new Date();
     const days =
       (endDate.getTime() - current.getTime()) / (1000 * 60 * 60 * 24);
-    if (days <= 0) return;
+    if (days <= 0) {
+      setErrDateVisible(true);
+      return;
+    }
+    setDoneVisible(true);
     const newCapsule = {
       name: textInput,
       endDate: endDate.toISOString(),
@@ -37,7 +52,7 @@ const CreateNewCapsule = ({ onCapsule, onCanceled, visible }) => {
           name="Memoryname"
           onChange={capsuleNameHandler}
         ></input>
-        <p className="ptext">Your start date is today: </p>
+        <p className="ptext">Your start date is today </p>
         <p className="ptext">Select end date:</p>
         <DatePicker
           id="Memoryname"

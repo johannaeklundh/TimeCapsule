@@ -16,6 +16,7 @@ import Arrow from "../arrow.png";
 import lower from "../startsida_lower.png";
 import upper from "../startsida_upper.png";
 import howto from "../HowTo.png";
+import Popup from "react-animated-popup";
 
 let capsuleStorage = JSON.parse(window.localStorage.getItem("capsules"));
 capsuleStorage = capsuleStorage == null ? [] : capsuleStorage;
@@ -24,6 +25,9 @@ function Home() {
   const [capsules, setCapsules] = useState(capsuleStorage);
   const [visible, setVisible] = useState(false);
   const navigate = useNavigate();
+  const [errNameVisible, setErrNameVisible] = useState(false);
+  const [errDateVisible, setErrDateVisible] = useState(false);
+  const [doneVisible, setDoneVisible] = useState(false);
 
   const addCapsule = (newCapsule) => {
     console.log(newCapsule);
@@ -36,25 +40,61 @@ function Home() {
   return (
     <div className="container">
       <img id="how" src={howto} onClick={() => navigate("/info")} />
-
       <AspectImage className="top" src={upper}>
         <img id="logo" src={Logo} />
         <button id="plus" type="button" onClick={() => setVisible(true)}>
           <img src={CapsulePlus} />
         </button>
       </AspectImage>
-
       <CreateNewCapsule
         onCapsule={addCapsule}
         onCanceled={() => setVisible(false)}
+        setErrNameVisible={setErrNameVisible}
+        setErrDateVisible={setErrDateVisible}
+        setDoneVisible={setDoneVisible}
         visible={visible}
       />
-
+      <Popup visible={errNameVisible} onClose={() => setErrNameVisible(false)}>
+        <p>
+          <b>Error!</b> <br></br>Write a name for the memory!
+        </p>
+        <button
+          type="button"
+          class="popupbutton"
+          onClick={() => setErrNameVisible(false)}
+        >
+          Cancel
+        </button>
+      </Popup>
+      <Popup visible={errDateVisible} onClose={() => setErrDateVisible(false)}>
+        <p>
+          <b>Error!</b> <br></br>Select a end date which is after today!
+        </p>
+        <button
+          type="button"
+          class="popupbutton"
+          onClick={() => setErrDateVisible(false)}
+        >
+          Cancel
+        </button>
+      </Popup>
+      <Popup visible={doneVisible} onClose={() => setDoneVisible(false)}>
+        <p>
+          <b>Sucess</b>
+          <br></br>Scroll down to see your capsule!
+        </p>
+        <button
+          type="button"
+          class="popupbutton"
+          onClick={() => setDoneVisible(false)}
+        >
+          Cancel
+        </button>
+      </Popup>
       <AspectImage className="top" src={lower}>
         <img id="memorylane" src={MemoryLane} />
         <img id="arrow" src={Arrow} />
       </AspectImage>
-
       <div
         className="mellanJord"
         style={{ backgroundImage: "url(/testjord2.png)" }}
@@ -64,7 +104,6 @@ function Home() {
           return <Capsule data={capsuledata}></Capsule>;
         })}
       </div>
-
       <div
         className="bottenJord"
         style={{ backgroundImage: "url(/morkjord2.png)" }}
