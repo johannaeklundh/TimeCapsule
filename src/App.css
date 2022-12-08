@@ -201,6 +201,7 @@ body {
   text-align: center;
   border-radius: 2px;
   text-decoration: none;
+  margin-top: 3vh;
 }
 
 .addphotos {
@@ -212,6 +213,7 @@ body {
 .addphoto_text {
   color: #efc88f;
   font-size: 35px;
+  margin: 0vh;
 }
 
 #plus:hover {
@@ -262,4 +264,9 @@ input {
 
 #howH1 {
   padding-top: 25vh;
+}
+
+#x {
+  padding: 5vw;
+  color: #efc88f;
 }

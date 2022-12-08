@@ -34,7 +34,8 @@ const UploadPhoto = ({ data, onDone }) => {
         }) => (
           // write your building UI
           <div>
-            <p className="addphoto_text"
+            <p
+              className="addphoto_text"
               style={isDragging ? { color: "red" } : undefined}
               onClick={onImageUpload}
               {...dragProps}
@@ -46,15 +47,21 @@ const UploadPhoto = ({ data, onDone }) => {
               <div key={index} className="image-item">
                 <img src={image["data_url"]} alt="" width="100" />
                 <div className="image-item__btn-wrapper">
-                  <p onClick={() => onImageRemove(index)}>x</p>
+                  <p id="x" onClick={() => onImageRemove(index)}>
+                    x
+                  </p>
                 </div>
               </div>
             ))}
-            <button class="minibutton" onClick={onImageRemoveAll}> Remove all</button>
+            <button class="minibutton" onClick={onImageRemoveAll}>
+              Remove all
+            </button>
           </div>
         )}
       </ImageUploading>
-      <button class="popupbutton" onClick={onDone}> Done</button>
+      <button class="popupbutton" onClick={onDone}>
+        Done
+      </button>
     </div>
   );
 };
