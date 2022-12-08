@@ -19,7 +19,6 @@ import howto from "../HowTo.png";
 
 let capsuleStorage = JSON.parse(window.localStorage.getItem("capsules"));
 capsuleStorage = capsuleStorage == null ? [] : capsuleStorage;
-console.log(capsuleStorage);
 
 function Home() {
   const [capsules, setCapsules] = useState(capsuleStorage);
@@ -28,7 +27,7 @@ function Home() {
 
   const addCapsule = (newCapsule) => {
     console.log(newCapsule);
-    const newState = [...capsules, newCapsule];
+    const newState = [newCapsule, ...capsules];
     window.localStorage.setItem("capsules", JSON.stringify(newState));
     setCapsules(newState); // lägger till den nya kaspeln i en array med alla andra
     setVisible(false);
