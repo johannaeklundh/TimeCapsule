@@ -9,7 +9,7 @@ const Info = (props) => {
   const navigate = useNavigate();
   return (
     <div className="infoBack">
-      <AspectImage className="top" src={start}>
+      <AspectImage className="topInfo" src={start}>
         <img src={pil} id="tillbakaKnapp" onClick={() => navigate("/")} />
         <h1 className="info" id="howH1">
           How the app works:{" "}

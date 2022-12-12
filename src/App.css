@@ -263,15 +263,15 @@ input {
 }
 
 #howH1 {
-  padding-top: 12vh;
+  padding-top: 10vh;
 }
 
 #x {
   padding: 5vw;
   color: #efc88f;
 }
-.top {
-  padding-bottom: 5vh;
+.topInfo {
+  padding-bottom: 10vh;
 }
 .lower {
   position: absolute;
