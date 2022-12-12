@@ -27,18 +27,15 @@ const Info = (props) => {
           the start date and end date. When the time is up, photos can no longer
           be uploaded to the capsule. <br></br>
           <br></br>
-          <b>2.</b> Photos can only be uploaded to the capsule between the start
-          date and end date. When the time is up, photos can no longer be
-          uploaded to the capsule.
         </p>
       </AspectImage>
-      <p className="info">
-        <br></br>
-        <br></br>
-        <b>3.</b> Photos that have been added can now be viewed! Enjoy making
-        memories that last forever!
-      </p>
-      <AspectImage className="lower" src={startLower}></AspectImage>
+
+      <AspectImage className="lower" src={startLower}>
+        <p className="info">
+          <b>3.</b> Photos that have been added can now be viewed! Enjoy making
+          memories that last forever!
+        </p>{" "}
+      </AspectImage>
     </div>
   );
 };
