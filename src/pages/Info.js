@@ -21,8 +21,11 @@ const Info = (props) => {
           </i>
           <br></br>
           <br></br>
-          <b>1.</b> When creating a capsule, choose your own name and between
-          which days you want to upload photos.<br></br>
+          <b>1.</b> When creating a capsule, choose your own name and which day
+          you want to close the capsule.<br></br>
+          <br></br> <b>2.</b> Photos can only be uploaded to the capsule between
+          the start date and end date. When the time is up, photos can no longer
+          be uploaded to the capsule. <br></br>
           <br></br>
           <b>2.</b> Photos can only be uploaded to the capsule between the start
           date and end date. When the time is up, photos can no longer be
