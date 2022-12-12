@@ -62,7 +62,7 @@ function Home() {
         </p>
         <button
           type="button"
-          class="popupbutton"
+          className="popupbutton"
           onClick={() => setErrNameVisible(false)}
         >
           Cancel
@@ -74,7 +74,7 @@ function Home() {
         </p>
         <button
           type="button"
-          class="popupbutton"
+          className="popupbutton"
           onClick={() => setErrDateVisible(false)}
         >
           Cancel
@@ -87,7 +87,7 @@ function Home() {
         </p>
         <button
           type="button"
-          class="popupbutton"
+          className="popupbutton"
           onClick={() => setDoneVisible(false)}
         >
           Cancel
@@ -100,7 +100,7 @@ function Home() {
         </p>
         <button
           type="button"
-          class="popupbutton"
+          className="popupbutton"
           onClick={() => setErrVisible(false)}
         >
           Cancel
@@ -115,7 +115,7 @@ function Home() {
         style={{ backgroundImage: "url(/testjord2.png)" }}
       >
         <h5>Tap on a capsule to add photos.</h5>
-        {capsules.map((capsuledata, index) => {
+        {capsules.map((capsuledata) => {
           return <Capsule data={capsuledata}></Capsule>;
         })}
       </div>
@@ -125,9 +125,9 @@ function Home() {
       >
         <h4>Tap on a capsule to view your saved photos.</h4>
 
-        <div class="button-group">
+        <div className="button-group">
           <button
-            id="open"
+            className="open"
             type="button"
             onClick={() => navigate("/capsule")}
             style={{ cursor: "pointer" }}
@@ -137,7 +137,7 @@ function Home() {
           </button>
 
           <button
-            id="open"
+            className="open"
             type="button"
             onClick={() => navigate("/capsule")}
             style={{ cursor: "pointer" }}
@@ -148,7 +148,7 @@ function Home() {
         </div>
 
         <button
-          id="open"
+          className="open"
           type="button"
           onClick={() => navigate("/capsule")}
           style={{ cursor: "pointer" }}

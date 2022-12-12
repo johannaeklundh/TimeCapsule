@@ -53,13 +53,13 @@ const UploadPhoto = ({ data, onDone }) => {
                 </div>
               </div>
             ))}
-            <button class="minibutton" onClick={onImageRemoveAll}>
+            <button className="minibutton" onClick={onImageRemoveAll}>
               Remove all
             </button>
           </div>
         )}
       </ImageUploading>
-      <button class="popupbutton" onClick={onDone}>
+      <button className="popupbutton" onClick={onDone}>
         Done
       </button>
     </div>

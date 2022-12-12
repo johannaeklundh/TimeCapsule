@@ -66,10 +66,10 @@ const CreateNewCapsule = ({
         />
         <br></br>
       </form>
-      <button type="button" class="popupbutton" onClick={onCanceled}>
+      <button type="button" className="popupbutton" onClick={onCanceled}>
         Cancel
       </button>
-      <button type="button" class="popupbutton" onClick={createCapsule}>
+      <button type="button" className="popupbutton" onClick={createCapsule}>
         Done
       </button>
     </div>

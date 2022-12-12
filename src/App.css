@@ -85,14 +85,14 @@ body {
   color: lightgoldenrodyellow;
 }
 
-#open {
+.open {
   background-color: transparent;
   border: none;
   padding: 5vw;
   box-sizing: content-box;
 }
 
-#open img {
+.open img {
   width: 150px;
   background-color: transparent;
 }

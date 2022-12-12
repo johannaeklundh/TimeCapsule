@@ -8,9 +8,8 @@ const Info = (props) => {
   const navigate = useNavigate();
   return (
     <div>
-             
       <AspectImage className="top" src={start}>
-      <img src={pil} id="tillbakaKnapp" onClick={() => navigate("/")}/>
+        <img src={pil} id="tillbakaKnapp" onClick={() => navigate("/")} />
         <h1 className="info" id="howH1">
           How the app works:{" "}
         </h1>
